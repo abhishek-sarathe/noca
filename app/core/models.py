@@ -125,7 +125,8 @@ class GuessRequest(BaseModel):
     """What the frontend sends when user submits a guess."""
     food_text: Optional[str] = None              # text description of food
     food_image_base64: Optional[str] = None      # base64 image data
-    user_guess_calories: float                   # the user's estimate
+    user_guess_calories: float                   # the user's calorie estimate
+    user_guess_protein: Optional[float] = None   # the user's protein estimate (grams)
     user_id: str = "anonymous"
 
 

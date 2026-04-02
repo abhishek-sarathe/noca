@@ -152,8 +152,7 @@ async def generate_feedback(
         elif accuracy >= 70:
             msg = f"Pretty good! You guessed {round(user_guess)} cal vs actual {round(actual_total)} cal. {'You overestimated a bit.' if diff > 0 else 'You underestimated slightly.'}"
         elif accuracy >= 50:
-            hint = "Try accounting for oil/ghee next time." if diff < 0 else "This food is lighter than it looks!"
-            msg = f"Not bad! You guessed {round(user_guess)} cal but it was actually {round(actual_total)} cal. {hint}"
+            msg = f"Not bad! You guessed {round(user_guess)} cal but it was actually {round(actual_total)} cal. {'Try accounting for oil/ghee next time.' if diff < 0 else 'This food is lighter than it looks!'}"
         else:
             hint = "The cooking fat and accompaniments add up more than you think!" if diff < 0 else "This dish is lighter than its reputation suggests!"
             msg = f"You guessed {round(user_guess)} cal but it was actually {round(actual_total)} cal. {hint}"

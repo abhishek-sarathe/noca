@@ -144,7 +144,7 @@ def seed_knowledge_base() -> int:
     Returns the number of documents added.
     """
     data_path = Path(__file__).parent.parent / "data" / "indian_foods.json"
-    with open(data_path, "r") as f:
+    with open(data_path, "r", encoding="utf-8") as f:
         foods = json.load(f)
 
     collection = get_collection()
@@ -224,7 +224,7 @@ def get_food_by_name(food_name: str) -> Optional[dict]:
     Returns the full food entry from JSON.
     """
     data_path = Path(__file__).parent.parent / "data" / "indian_foods.json"
-    with open(data_path, "r") as f:
+    with open(data_path, "r", encoding="utf-8") as f:
         foods = json.load(f)
 
     food_name_lower = food_name.lower().strip()

@@ -8,13 +8,16 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.rag import seed_knowledge_base, get_collection
+from app.core.database import init_db
 from app.api.routes_guess import router as guess_router
 from app.api.routes_challenge import router as challenge_router
+from app.api.routes_progress import router as progress_router
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Startup: seed the knowledge base if empty."""
+    """Startup: seed knowledge base + init database."""
+    init_db()
     collection = get_collection()
     if collection.count() == 0:
         print("Knowledge base empty — seeding...")
@@ -44,6 +47,7 @@ app.add_middleware(
 # Routes
 app.include_router(guess_router)
 app.include_router(challenge_router)
+app.include_router(progress_router)
 
 
 @app.get("/")
