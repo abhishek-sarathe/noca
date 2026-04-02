@@ -1,0 +1,21 @@
+# Core
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-dotenv==1.0.1
+pydantic==2.9.0
+pydantic-settings==2.5.0
+
+# LLM & Agents
+langchain==0.3.25
+langchain-groq==0.2.4
+langchain-community==0.3.24
+langgraph==0.4.1
+
+# RAG
+chromadb==0.5.23
+sentence-transformers==3.4.1
+
+# Data & Utils
+httpx==0.27.0
+python-multipart==0.0.9
+Pillow==10.4.0
