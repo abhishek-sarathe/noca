@@ -31,6 +31,7 @@ async def get_challenge(request: ChallengeRequest):
         user_id=request.user_id,
         skill_profile=profile if user["total_guesses"] > 0 else None,
         num_questions=5,
+        challenge_type=request.challenge_type,
     )
 
     return ChallengeResponse(

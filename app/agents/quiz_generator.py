@@ -23,38 +23,44 @@ from app.core.models import QuizQuestion, SkillProfile
 from app.core.rag import query_knowledge_base
 
 
-QUIZ_SYSTEM_PROMPT = """You are a fun, engaging quiz creator for an Indian food calorie learning app.
-Create quiz questions that teach users to estimate calories better.
+QUIZ_SYSTEM_PROMPT = """You are a fun, engaging quiz creator for an Indian food calorie and protein learning app.
+Create quiz questions that teach users to estimate calories and protein better.
 
 The user's skill level is {level}/5. Weak categories: {weak_categories}.
 
-Generate {num_questions} quiz questions as a JSON array. Mix the question types.
+Generate {num_questions} quiz questions as a JSON array. Use a MIX of different question types — do NOT repeat the same type twice in a row.
 
-Question types:
-1. "quick_guess" — Show a food with portion, user guesses calories
-2. "higher_lower" — Two foods, which has more calories?
-3. "portion_detective" — Same food, different portions, match to calorie count
-4. "calorie_swap" — Given X calories, what other food has similar calories?
+Question types (use ALL of these across the quiz):
+1. "quick_guess" — Show a food with portion, user guesses approximate calories. Options are calorie ranges.
+2. "higher_lower" — Two Indian foods, which has more calories (or more protein)?
+3. "portion_detective" — Same food, different portions — match the correct calorie count.
+4. "calorie_swap" — "You ate X (Y calories). What else has roughly the same calories?" 
+5. "protein_check" — Focus on protein content. "Which has more protein?", "How much protein in X?", or "Which is the best protein-per-calorie option?"
+6. "myth_buster" — True/False statements about Indian food nutrition. Common misconceptions like "paneer is lighter than chicken", "brown rice has way fewer calories", "fruit juice is healthy", etc.
 
 For each question provide:
 {{
-  "question_type": "quick_guess|higher_lower|portion_detective|calorie_swap",
+  "question_type": "quick_guess|higher_lower|portion_detective|calorie_swap|protein_check|myth_buster",
   "question_text": "The question to show the user",
   "food_items": ["food1", "food2"],
   "options": ["option A", "option B", "option C", "option D"],
-  "correct_answer": "the correct option",
-  "explanation": "A fun, memorable explanation with the actual calorie info",
+  "correct_answer": "the correct option (must EXACTLY match one of the options)",
+  "explanation": "A fun, memorable explanation with actual numbers. Make it stick.",
   "difficulty": 1-5,
   "calories_info": {{"food1": 300, "food2": 250}}
 }}
 
-IMPORTANT:
-- Use REAL Indian food items and accurate calorie data
-- Make explanations fun and memorable, use comparisons
+RULES:
+- Use REAL Indian food items with ACCURATE calorie and protein data
+- correct_answer MUST exactly match one string in the options array
+- Make explanations punchy and memorable — use comparisons ("that's like eating 3 rotis")
+- For myth_buster: use exactly 2 options — "True" and "False"
+- For protein_check: include protein gram values in the explanation
 - For level 1-2: common foods, obvious differences
-- For level 3-4: similar calorie foods, tricky preparations
-- For level 5: restaurant vs homemade, subtle portion differences
+- For level 3-4: similar calorie foods, tricky preparations, protein-focused
+- For level 5: restaurant vs homemade, subtle differences, macro tradeoffs
 - Focus extra questions on the user's weak categories
+- Ensure variety: do NOT generate 2 questions of the same type in a row
 
 Respond with ONLY a JSON array. No markdown, no extra text."""
 
@@ -72,6 +78,7 @@ def get_quiz_llm() -> ChatGroq:
 async def generate_quiz(
     skill_profile: SkillProfile | None = None,
     num_questions: int = 5,
+    challenge_type: str = "",
 ) -> list[QuizQuestion]:
     """
     Generate personalized quiz questions.
@@ -79,6 +86,7 @@ async def generate_quiz(
     Args:
         skill_profile: User's current skill profile (or None for default)
         num_questions: How many questions to generate
+        challenge_type: Specific type like "protein_check", or empty for mix
 
     Returns:
         List of QuizQuestion objects
@@ -88,21 +96,28 @@ async def generate_quiz(
 
     # Get some food knowledge to ground the LLM
     rag_context_parts = []
-    for cat in weak_cats[:3]:
-        results = query_knowledge_base(
-            f"{cat} Indian food calories",
-            n_results=3,
-            doc_type="portions",
-        )
-        for r in results:
-            rag_context_parts.append(r["text"])
 
-    # Also get some random foods for variety
-    random_queries = ["popular Indian snack calories", "Indian breakfast calories", "Indian dessert calories"]
-    for q in random.sample(random_queries, min(2, len(random_queries))):
-        results = query_knowledge_base(q, n_results=2)
-        for r in results:
-            rag_context_parts.append(r["text"])
+    # For protein_check, get protein-related context
+    if challenge_type == "protein_check":
+        for q in ["high protein Indian food", "protein per 100g chicken paneer egg", "protein comparison"]:
+            results = query_knowledge_base(q, n_results=3)
+            for r in results:
+                rag_context_parts.append(r["text"])
+    else:
+        for cat in weak_cats[:3]:
+            results = query_knowledge_base(
+                f"{cat} Indian food calories",
+                n_results=3,
+                doc_type="portions",
+            )
+            for r in results:
+                rag_context_parts.append(r["text"])
+
+        random_queries = ["popular Indian snack calories", "Indian breakfast calories", "Indian dessert calories"]
+        for q in random.sample(random_queries, min(2, len(random_queries))):
+            results = query_knowledge_base(q, n_results=2)
+            for r in results:
+                rag_context_parts.append(r["text"])
 
     rag_context = "\n".join(rag_context_parts[:10])
 
@@ -114,9 +129,14 @@ async def generate_quiz(
         num_questions=num_questions,
     )
 
+    # Add type-specific instruction
+    type_instruction = ""
+    if challenge_type and challenge_type != "mix":
+        type_instruction = f"\n\nIMPORTANT: Generate ALL {num_questions} questions as type \"{challenge_type}\" ONLY. Do not mix types."
+
     messages = [
         SystemMessage(content=prompt),
-        HumanMessage(content=f"Here's some food data to use:\n\n{rag_context}\n\nNow generate {num_questions} quiz questions."),
+        HumanMessage(content=f"Here's some food data to use:\n\n{rag_context}\n\nNow generate {num_questions} quiz questions.{type_instruction}"),
     ]
 
     response = await llm.ainvoke(messages)

@@ -3,7 +3,7 @@ Pydantic models — the data contracts between agents, API, and frontend.
 """
 from __future__ import annotations
 from typing import Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 # ═══════════════════════════════════════════
@@ -21,16 +21,28 @@ class FoodItem(BaseModel):
 
 
 class NutritionInfo(BaseModel):
-    """Nutrition breakdown for a single food item."""
+    """Nutrition breakdown for a single food item.
+    
+    Calories are DERIVED from macros using the Atwater system:
+      calories = (protein_g * 4) + (carbs_g * 4) + (fat_g * 9)
+    This ensures macros and calories are always mathematically consistent.
+    """
     food_name: str
-    calories: float
+    calories: float = 0.0  # Always computed from macros — do not set manually
     protein_g: float = 0.0
     carbs_g: float = 0.0
     fat_g: float = 0.0
     fiber_g: float = 0.0
     portion_grams: float = 0.0
-    source: str = "knowledge_base"               # "knowledge_base" | "llm_estimate"
+    source: str = "knowledge_base"
     confidence: float = 0.0
+    is_accompaniment: bool = False
+
+    @model_validator(mode="after")
+    def derive_calories_from_macros(self):
+        """Atwater: P*4 + C*4 + F*9. Always overwrites any manually set calories."""
+        self.calories = round(self.protein_g * 4 + self.carbs_g * 4 + self.fat_g * 9, 1)
+        return self
 
 
 # ═══════════════════════════════════════════
@@ -144,6 +156,7 @@ class GuessResponse(BaseModel):
 
 class ChallengeRequest(BaseModel):
     user_id: str = "anonymous"
+    challenge_type: Optional[str] = None  # None = mix, or specific type like "protein_check"
 
 
 class ChallengeResponse(BaseModel):

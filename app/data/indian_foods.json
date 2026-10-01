@@ -2,693 +2,4953 @@
   {
     "canonical_name": "poha",
     "display_name": "Poha (Flattened Rice)",
-    "aliases": ["chivda", "aval", "flattened rice", "beaten rice", "chira"],
+    "aliases": [
+      "chivda",
+      "aval",
+      "flattened rice",
+      "beaten rice",
+      "chira"
+    ],
     "category": "breakfast",
-    "region": ["maharashtra", "madhya_pradesh", "karnataka", "gujarat"],
-    "base_calories_per_100g": 110,
+    "region": [
+      "maharashtra",
+      "madhya_pradesh",
+      "karnataka",
+      "gujarat"
+    ],
+    "base_calories_per_100g": 130,
     "portions": {
-      "katori (small bowl ~150g)": { "grams": 150, "calories": 180 },
-      "plate (medium ~250g)": { "grams": 250, "calories": 300 },
-      "restaurant serving (~300g)": { "grams": 300, "calories": 370 }
+      "katori (small bowl ~150g)": {
+        "grams": 150,
+        "calories": 180
+      },
+      "plate (medium ~250g)": {
+        "grams": 250,
+        "calories": 300
+      },
+      "restaurant serving (~300g)": {
+        "grams": 300,
+        "calories": 370
+      }
     },
     "preparations": {
-      "plain": { "multiplier": 1.0, "note": "Basic with turmeric and salt" },
-      "with peanuts & curry leaves": { "multiplier": 1.15, "note": "Adds ~30 cal from peanuts" },
-      "kanda poha (with onions)": { "multiplier": 1.1, "note": "Standard Maharashtrian style" },
-      "batata poha (with potatoes)": { "multiplier": 1.25, "note": "Potatoes add carbs" },
-      "fried/crispy poha": { "multiplier": 1.4, "note": "Deep fried version, much higher fat" }
+      "plain": {
+        "multiplier": 1.0,
+        "note": "Basic with turmeric and salt"
+      },
+      "with peanuts & curry leaves": {
+        "multiplier": 1.15,
+        "note": "Adds ~30 cal from peanuts"
+      },
+      "kanda poha (with onions)": {
+        "multiplier": 1.1,
+        "note": "Standard Maharashtrian style"
+      },
+      "batata poha (with potatoes)": {
+        "multiplier": 1.25,
+        "note": "Potatoes add carbs"
+      },
+      "fried/crispy poha": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 3.0,
+        "note": "Deep fried version, fat triples"
+      }
     },
     "fun_facts": [
       "Poha absorbs less oil during cooking than rice, making it naturally lighter.",
       "A plate of poha has roughly the same calories as 1.5 slices of bread.",
       "The iron content in poha is surprisingly high because of the flattening process."
     ],
-    "common_mistakes": ["People underestimate because it looks light and fluffy, but oil and peanuts add up."],
-    "visual_references": ["1 katori = roughly a cricket ball volume = ~180 cal"]
+    "common_mistakes": [
+      "People underestimate because it looks light and fluffy, but oil and peanuts add up."
+    ],
+    "visual_references": [
+      "1 katori = roughly a cricket ball volume = ~180 cal"
+    ],
+    "protein_per_100g": 2.5,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 3.5
   },
   {
     "canonical_name": "idli",
     "display_name": "Idli",
-    "aliases": ["idly", "rice cake"],
+    "aliases": [
+      "idly",
+      "rice cake",
+      "idli sambar",
+      "idli sambhar",
+      "idli with sambar",
+      "idli with chutney"
+    ],
     "category": "breakfast",
-    "region": ["tamil_nadu", "karnataka", "andhra_pradesh", "kerala"],
-    "base_calories_per_100g": 130,
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "andhra_pradesh",
+      "kerala"
+    ],
+    "base_calories_per_100g": 129,
     "portions": {
-      "1 piece (~40g)": { "grams": 40, "calories": 52 },
-      "2 pieces (~80g)": { "grams": 80, "calories": 104 },
-      "3 pieces (~120g)": { "grams": 120, "calories": 156 },
-      "4 pieces (standard order ~160g)": { "grams": 160, "calories": 208 }
+      "1 piece (~40g)": {
+        "grams": 40,
+        "calories": 52
+      },
+      "2 pieces (~80g)": {
+        "grams": 80,
+        "calories": 104
+      },
+      "3 pieces (~120g)": {
+        "grams": 120,
+        "calories": 156
+      },
+      "4 pieces (standard order ~160g)": {
+        "grams": 160,
+        "calories": 208
+      }
     },
     "preparations": {
-      "plain": { "multiplier": 1.0, "note": "Steamed, very low fat" },
-      "with coconut chutney": { "multiplier": 1.3, "note": "Chutney adds ~40 cal per serving" },
-      "with sambar": { "multiplier": 1.4, "note": "Sambar adds ~50-70 cal" },
-      "fried idli / idli fry": { "multiplier": 1.8, "note": "Pan-fried with masala, nearly doubles calories" },
-      "ghee podi idli": { "multiplier": 1.6, "note": "Ghee + gunpowder spice mix adds significant fat" }
+      "plain": {
+        "multiplier": 1.0,
+        "note": "Steamed, very low fat"
+      },
+      "with coconut chutney": {
+        "multiplier": 1.3,
+        "note": "Chutney adds ~40 cal per serving"
+      },
+      "with sambar": {
+        "multiplier": 1.4,
+        "note": "Sambar adds ~50-70 cal"
+      },
+      "fried idli / idli fry": {
+        "protein_multiplier": 1.1,
+        "carbs_multiplier": 1.05,
+        "fat_multiplier": 12.0,
+        "note": "Deep frying absorbs oil — fat jumps dramatically (0.3g base), protein/carbs barely change"
+      },
+      "ghee podi idli": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 10.0,
+        "note": "Ghee + gunpowder adds mostly fat"
+      }
     },
     "fun_facts": [
       "A plain idli is one of the lowest calorie Indian breakfast items at just 52 calories each.",
       "Idli batter fermentation creates probiotics that aid digestion.",
       "The real calorie trap isn't the idli — it's the ghee and chutneys."
     ],
-    "common_mistakes": ["People forget to count the accompaniments. 4 idli + sambar + chutney is ~350 cal, not 200."],
-    "visual_references": ["1 idli = roughly the size of a hockey puck = ~52 cal"]
+    "common_mistakes": [
+      "People forget to count the accompaniments. 4 idli + sambar + chutney is ~350 cal, not 200."
+    ],
+    "visual_references": [
+      "1 idli = roughly the size of a hockey puck = ~52 cal"
+    ],
+    "protein_per_100g": 6.3,
+    "carbs_per_100g": 25,
+    "fat_per_100g": 0.3,
+    "accompaniments": {
+      "sambar": {
+        "protein_g": 3.0,
+        "carbs_g": 11.3,
+        "fat_g": 1.5,
+        "grams": 150,
+        "default": false
+      },
+      "coconut_chutney": {
+        "protein_g": 0.5,
+        "carbs_g": 2.0,
+        "fat_g": 3.0,
+        "grams": 30,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "dosa",
     "display_name": "Dosa",
-    "aliases": ["dosai", "thosai", "crepe"],
+    "aliases": [
+      "dosai",
+      "thosai",
+      "crepe",
+      "dosa sambar",
+      "dosa with sambar",
+      "dosa sambhar",
+      "dosa with chutney"
+    ],
     "category": "breakfast",
-    "region": ["tamil_nadu", "karnataka", "andhra_pradesh", "kerala"],
-    "base_calories_per_100g": 160,
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "andhra_pradesh",
+      "kerala"
+    ],
+    "base_calories_per_100g": 168,
     "portions": {
-      "small dosa (~80g)": { "grams": 80, "calories": 130 },
-      "regular dosa (~120g)": { "grams": 120, "calories": 190 },
-      "restaurant dosa (~150g)": { "grams": 150, "calories": 240 }
+      "small dosa (~80g)": {
+        "grams": 80,
+        "calories": 130
+      },
+      "regular dosa (~120g)": {
+        "grams": 120,
+        "calories": 190
+      },
+      "restaurant dosa (~150g)": {
+        "grams": 150,
+        "calories": 240
+      }
     },
     "preparations": {
-      "plain/sada": { "multiplier": 1.0, "note": "Thin crispy version" },
-      "masala dosa": { "multiplier": 1.5, "note": "Potato filling adds ~120 cal" },
-      "butter dosa": { "multiplier": 1.4, "note": "Extra butter on the pan" },
-      "ghee roast dosa": { "multiplier": 1.6, "note": "Loaded with ghee, very crispy" },
-      "mysore masala dosa": { "multiplier": 1.7, "note": "Red chutney spread + potato + extra oil" },
-      "rava dosa": { "multiplier": 1.2, "note": "Semolina based, slightly different" },
-      "set dosa": { "multiplier": 0.8, "note": "Smaller, thicker, less oil per piece" }
+      "plain/sada": {
+        "multiplier": 1.0,
+        "note": "Thin crispy version"
+      },
+      "masala dosa": {
+        "multiplier": 1.5,
+        "note": "Potato filling adds ~120 cal"
+      },
+      "butter dosa": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 2.5,
+        "note": "Extra butter on the pan"
+      },
+      "ghee roast dosa": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 3.0,
+        "note": "Loaded with ghee, very crispy"
+      },
+      "mysore masala dosa": {
+        "multiplier": 1.7,
+        "note": "Red chutney spread + potato + extra oil"
+      },
+      "rava dosa": {
+        "multiplier": 1.2,
+        "note": "Semolina based, slightly different"
+      },
+      "set dosa": {
+        "multiplier": 0.8,
+        "note": "Smaller, thicker, less oil per piece"
+      }
     },
     "fun_facts": [
       "A restaurant masala dosa can have 350-400 calories — nearly as much as a McDonald's burger.",
       "The difference between a home dosa and restaurant dosa can be 100+ calories purely from oil.",
       "Rava dosa uses more oil to get crispy, despite seeming 'lighter'."
     ],
-    "common_mistakes": ["Masala dosa is the classic underestimate. People think ~200 cal when it's closer to 350-400 with accompaniments."],
-    "visual_references": ["1 regular dosa = roughly the area of a dinner plate = ~190 cal plain"]
+    "common_mistakes": [
+      "Masala dosa is the classic underestimate. People think ~200 cal when it's closer to 350-400 with accompaniments."
+    ],
+    "visual_references": [
+      "1 regular dosa = roughly the area of a dinner plate = ~190 cal plain"
+    ],
+    "protein_per_100g": 3.9,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 4.5,
+    "accompaniments": {
+      "sambar": {
+        "protein_g": 3.0,
+        "carbs_g": 11.3,
+        "fat_g": 1.5,
+        "grams": 150,
+        "default": false
+      },
+      "coconut_chutney": {
+        "protein_g": 0.5,
+        "carbs_g": 2.0,
+        "fat_g": 3.0,
+        "grams": 30,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "roti",
     "display_name": "Roti / Chapati",
-    "aliases": ["chapati", "phulka", "chapathi", "fulka", "Indian flatbread"],
+    "aliases": [
+      "chapati",
+      "phulka",
+      "chapathi",
+      "fulka",
+      "Indian flatbread"
+    ],
     "category": "staple",
-    "region": ["north_india", "west_india", "central_india"],
+    "region": [
+      "north_india",
+      "west_india",
+      "central_india"
+    ],
     "base_calories_per_100g": 240,
     "portions": {
-      "1 small roti (~30g)": { "grams": 30, "calories": 72 },
-      "1 medium roti (~40g)": { "grams": 40, "calories": 100 },
-      "1 large roti (~55g)": { "grams": 55, "calories": 130 }
+      "1 small roti (~30g)": {
+        "grams": 30,
+        "calories": 72
+      },
+      "1 medium roti (~40g)": {
+        "grams": 40,
+        "calories": 100
+      },
+      "1 large roti (~55g)": {
+        "grams": 55,
+        "calories": 130
+      }
     },
     "preparations": {
-      "dry (no ghee)": { "multiplier": 1.0, "note": "Plain tawa roti" },
-      "with ghee": { "multiplier": 1.35, "note": "1 tsp ghee adds ~35 cal" },
-      "with butter": { "multiplier": 1.3, "note": "Similar to ghee" },
-      "tandoori roti": { "multiplier": 1.1, "note": "Slightly thicker, cooked in tandoor" },
-      "rumali roti": { "multiplier": 0.7, "note": "Paper thin, lower cal per piece" }
+      "dry (no ghee)": {
+        "multiplier": 1.0,
+        "note": "Plain tawa roti"
+      },
+      "with ghee": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 2.5,
+        "note": "1 tsp ghee adds ~5g fat"
+      },
+      "with butter": {
+        "multiplier": 1.3,
+        "note": "Similar to ghee"
+      },
+      "tandoori roti": {
+        "multiplier": 1.1,
+        "note": "Slightly thicker, cooked in tandoor"
+      },
+      "rumali roti": {
+        "multiplier": 0.7,
+        "note": "Paper thin, lower cal per piece"
+      }
     },
     "fun_facts": [
       "The size of roti varies hugely — a dhaba roti can be 2x the calories of a home roti.",
       "Adding ghee to each roti adds up fast: 3 rotis with ghee = extra 100+ calories vs dry.",
       "Phulka (puffed roti) and chapati are the same thing — phulka just puffs on direct flame."
     ],
-    "common_mistakes": ["People count rotis but forget the ghee. 3 rotis 'with a little ghee' can be 400+ cal."],
-    "visual_references": ["1 medium roti = roughly the size of a standard plate rim = ~100 cal"]
+    "common_mistakes": [
+      "People count rotis but forget the ghee. 3 rotis 'with a little ghee' can be 400+ cal."
+    ],
+    "visual_references": [
+      "1 medium roti = roughly the size of a standard plate rim = ~100 cal"
+    ],
+    "protein_per_100g": 7.5,
+    "carbs_per_100g": 44,
+    "fat_per_100g": 3.5,
+    "accompaniments": {
+      "ghee_1tsp": {
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 5.0,
+        "grams": 5,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "rice",
     "display_name": "Steamed Rice",
-    "aliases": ["chawal", "bhat", "annam", "cooked rice", "white rice"],
+    "aliases": [
+      "chawal",
+      "bhat",
+      "annam",
+      "cooked rice",
+      "white rice"
+    ],
     "category": "staple",
-    "region": ["south_india", "east_india", "all_india"],
+    "region": [
+      "south_india",
+      "east_india",
+      "all_india"
+    ],
     "base_calories_per_100g": 130,
     "portions": {
-      "1 katori (~100g)": { "grams": 100, "calories": 130 },
-      "1 plate/helping (~200g)": { "grams": 200, "calories": 260 },
-      "large helping (~300g)": { "grams": 300, "calories": 390 }
+      "1 katori (~100g)": {
+        "grams": 100,
+        "calories": 130
+      },
+      "1 plate/helping (~200g)": {
+        "grams": 200,
+        "calories": 260
+      },
+      "large helping (~300g)": {
+        "grams": 300,
+        "calories": 390
+      }
     },
     "preparations": {
-      "plain steamed": { "multiplier": 1.0, "note": "Basic white rice" },
-      "jeera rice": { "multiplier": 1.15, "note": "Tempered with ghee and cumin" },
-      "lemon rice": { "multiplier": 1.2, "note": "Oil tempering + peanuts" },
-      "biryani rice (plain)": { "multiplier": 1.3, "note": "Ghee, oil in cooking" },
-      "fried rice": { "multiplier": 1.5, "note": "Significant oil added" },
-      "curd rice": { "multiplier": 1.2, "note": "Curd + tempering adds calories" }
+      "plain steamed": {
+        "multiplier": 1.0,
+        "note": "Basic white rice"
+      },
+      "jeera rice": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 8.0,
+        "note": "Ghee + cumin tempering adds fat to nearly-zero-fat rice"
+      },
+      "lemon rice": {
+        "multiplier": 1.2,
+        "note": "Oil tempering + peanuts"
+      },
+      "biryani rice (plain)": {
+        "multiplier": 1.3,
+        "note": "Ghee, oil in cooking"
+      },
+      "fried rice": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 12.0,
+        "note": "Significant oil added to low-fat base"
+      },
+      "curd rice": {
+        "multiplier": 1.2,
+        "note": "Curd + tempering adds calories"
+      }
     },
     "fun_facts": [
       "A fist-sized portion of cooked rice is roughly 130 calories.",
       "Most people eat 1.5-2 fists of rice without realizing it — that's 200-260 cal before any curry.",
       "Brown rice has only 10-15% fewer calories than white rice — the real difference is fiber."
     ],
-    "common_mistakes": ["The biggest rice mistake is portion blindness. People pour rice without measuring and often eat 300g+ thinking it was 'one serving'."],
-    "visual_references": ["1 closed fist = ~100g cooked rice = ~130 cal"]
+    "common_mistakes": [
+      "The biggest rice mistake is portion blindness. People pour rice without measuring and often eat 300g+ thinking it was 'one serving'."
+    ],
+    "visual_references": [
+      "1 closed fist = ~100g cooked rice = ~130 cal"
+    ],
+    "protein_per_100g": 2.7,
+    "carbs_per_100g": 28.2,
+    "fat_per_100g": 0.3
   },
   {
     "canonical_name": "dal",
     "display_name": "Dal (Lentil Curry)",
-    "aliases": ["daal", "dhal", "lentil soup", "sambhar dal", "tadka dal"],
+    "aliases": [
+      "daal",
+      "dhal",
+      "lentil soup",
+      "sambhar dal",
+      "tadka dal",
+      "dal chawal",
+      "dal_chawal",
+      "dal with rice",
+      "dal roti",
+      "dal with roti"
+    ],
     "category": "curry",
-    "region": ["all_india"],
-    "base_calories_per_100g": 75,
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 120,
     "portions": {
-      "1 katori (~150ml)": { "grams": 150, "calories": 110 },
-      "1 bowl (~250ml)": { "grams": 250, "calories": 190 },
-      "restaurant serving (~300ml)": { "grams": 300, "calories": 230 }
+      "1 katori (~150ml)": {
+        "grams": 150,
+        "calories": 110
+      },
+      "1 bowl (~250ml)": {
+        "grams": 250,
+        "calories": 190
+      },
+      "restaurant serving (~300ml)": {
+        "grams": 300,
+        "calories": 230
+      }
     },
     "preparations": {
-      "plain boiled": { "multiplier": 1.0, "note": "Just lentils and water" },
-      "tadka/tempering": { "multiplier": 1.4, "note": "Ghee/oil tempering adds significant calories" },
-      "dal fry": { "multiplier": 1.5, "note": "Extra oil + onion-tomato base" },
-      "dal makhani": { "multiplier": 2.0, "note": "Butter + cream makes it very rich — 200+ cal per bowl" },
-      "sambar": { "multiplier": 1.2, "note": "Vegetables dilute the calories slightly" }
+      "plain boiled": {
+        "multiplier": 1.0,
+        "note": "Just lentils and water"
+      },
+      "tadka/tempering": {
+        "multiplier": 1.4,
+        "note": "Ghee/oil tempering adds significant calories"
+      },
+      "dal fry": {
+        "multiplier": 1.5,
+        "note": "Extra oil + onion-tomato base"
+      },
+      "dal makhani": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.1,
+        "fat_multiplier": 3.0,
+        "note": "Butter + cream makes it very rich in fat"
+      },
+      "sambar": {
+        "multiplier": 1.2,
+        "note": "Vegetables dilute the calories slightly"
+      }
     },
     "fun_facts": [
       "Plain boiled dal is very low calorie and high protein — one of the best Indian diet foods.",
       "Dal makhani at a restaurant can have 2-3x the calories of home-cooked tadka dal.",
       "The tadka (tempering) alone can add 50-80 calories to a bowl of dal."
     ],
-    "common_mistakes": ["Dal makhani is the classic trap. It sounds healthy ('it's just dal') but restaurant versions are loaded with butter and cream."],
-    "visual_references": ["1 katori of dal = roughly a tennis ball volume = ~110 cal for tadka dal"]
+    "common_mistakes": [
+      "Dal makhani is the classic trap. It sounds healthy ('it's just dal') but restaurant versions are loaded with butter and cream."
+    ],
+    "visual_references": [
+      "1 katori of dal = roughly a tennis ball volume = ~110 cal for tadka dal"
+    ],
+    "protein_per_100g": 6.5,
+    "carbs_per_100g": 14,
+    "fat_per_100g": 4.5,
+    "accompaniments": {
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      },
+      "roti": {
+        "protein_g": 3.0,
+        "carbs_g": 17.6,
+        "fat_g": 1.4,
+        "grams": 40,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "butter_chicken",
     "display_name": "Butter Chicken",
-    "aliases": ["murgh makhani", "chicken makhani"],
+    "aliases": [
+      "murgh makhani",
+      "chicken makhani",
+      "butter chicken with naan",
+      "butter chicken naan",
+      "butter chicken with roti"
+    ],
     "category": "curry",
-    "region": ["north_india", "punjab", "delhi"],
-    "base_calories_per_100g": 150,
+    "region": [
+      "north_india",
+      "punjab",
+      "delhi"
+    ],
+    "base_calories_per_100g": 195,
     "portions": {
-      "1 katori (~150g)": { "grams": 150, "calories": 225 },
-      "1 bowl (~250g)": { "grams": 250, "calories": 375 },
-      "restaurant half portion (~200g)": { "grams": 200, "calories": 300 }
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 225
+      },
+      "1 bowl (~250g)": {
+        "grams": 250,
+        "calories": 375
+      },
+      "restaurant half portion (~200g)": {
+        "grams": 200,
+        "calories": 300
+      }
     },
     "preparations": {
-      "homemade (moderate cream)": { "multiplier": 1.0, "note": "Still rich, but controllable" },
-      "restaurant style": { "multiplier": 1.3, "note": "Extra butter, cream, and oil" },
-      "dhaba style": { "multiplier": 1.4, "note": "Maximum richness" }
+      "homemade (moderate cream)": {
+        "multiplier": 1.0,
+        "note": "Still rich, but controllable"
+      },
+      "restaurant style": {
+        "multiplier": 1.3,
+        "note": "Extra butter, cream, and oil"
+      },
+      "dhaba style": {
+        "multiplier": 1.4,
+        "note": "Maximum richness"
+      }
     },
     "fun_facts": [
       "A restaurant butter chicken with 2 naans can easily be 900-1000 calories for one meal.",
       "The 'butter' in butter chicken is real — a restaurant portion can have 3-4 tablespoons of butter.",
       "Switching from butter chicken to tandoori chicken saves about 150-200 calories per serving."
     ],
-    "common_mistakes": ["People guess ~300 cal for a restaurant serving when it's closer to 400-500 for the gravy alone."],
-    "visual_references": ["1 restaurant bowl = roughly 250ml = ~375 cal"]
+    "common_mistakes": [
+      "People guess ~300 cal for a restaurant serving when it's closer to 400-500 for the gravy alone."
+    ],
+    "visual_references": [
+      "1 restaurant bowl = roughly 250ml = ~375 cal"
+    ],
+    "protein_per_100g": 11,
+    "carbs_per_100g": 6,
+    "fat_per_100g": 14,
+    "accompaniments": {
+      "naan": {
+        "protein_g": 9.6,
+        "carbs_g": 50,
+        "fat_g": 5.7,
+        "grams": 90,
+        "default": false
+      },
+      "roti": {
+        "protein_g": 3.0,
+        "carbs_g": 17.6,
+        "fat_g": 1.4,
+        "grams": 40,
+        "default": false
+      },
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "paneer_butter_masala",
     "display_name": "Paneer Butter Masala",
-    "aliases": ["paneer makhani", "shahi paneer", "paneer tikka masala"],
+    "aliases": [
+      "paneer makhani",
+      "shahi paneer",
+      "paneer tikka masala",
+      "paneer butter masala with naan",
+      "shahi paneer with naan",
+      "paneer with naan"
+    ],
     "category": "curry",
-    "region": ["north_india", "punjab"],
+    "region": [
+      "north_india",
+      "punjab"
+    ],
     "base_calories_per_100g": 180,
     "portions": {
-      "1 katori (~150g)": { "grams": 150, "calories": 270 },
-      "1 bowl (~250g)": { "grams": 250, "calories": 450 },
-      "restaurant serving (~300g)": { "grams": 300, "calories": 540 }
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 270
+      },
+      "1 bowl (~250g)": {
+        "grams": 250,
+        "calories": 450
+      },
+      "restaurant serving (~300g)": {
+        "grams": 300,
+        "calories": 540
+      }
     },
     "preparations": {
-      "homemade": { "multiplier": 1.0, "note": "Can control butter and cream" },
-      "restaurant style": { "multiplier": 1.3, "note": "Heavy on cream and cashew paste" }
+      "homemade": {
+        "multiplier": 1.0,
+        "note": "Can control butter and cream"
+      },
+      "restaurant style": {
+        "multiplier": 1.3,
+        "note": "Heavy on cream and cashew paste"
+      }
     },
     "fun_facts": [
       "Paneer itself is 265 cal per 100g — it's one of the most calorie-dense vegetarian proteins.",
       "A restaurant paneer butter masala can match a butter chicken in calories.",
       "People assume vegetarian = lighter, but paneer curries are often MORE calorie-dense than chicken curries."
     ],
-    "common_mistakes": ["The 'vegetarian is lighter' fallacy. Paneer butter masala is often 450-550 cal per serving."],
-    "visual_references": ["6 cubes of paneer (100g) = roughly 265 cal before any gravy"]
+    "common_mistakes": [
+      "The 'vegetarian is lighter' fallacy. Paneer butter masala is often 450-550 cal per serving."
+    ],
+    "visual_references": [
+      "6 cubes of paneer (100g) = roughly 265 cal before any gravy"
+    ],
+    "protein_per_100g": 6,
+    "carbs_per_100g": 8,
+    "fat_per_100g": 14,
+    "accompaniments": {
+      "naan": {
+        "protein_g": 9.6,
+        "carbs_g": 50,
+        "fat_g": 5.7,
+        "grams": 90,
+        "default": false
+      },
+      "roti": {
+        "protein_g": 3.0,
+        "carbs_g": 17.6,
+        "fat_g": 1.4,
+        "grams": 40,
+        "default": false
+      },
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "chicken_biryani",
     "display_name": "Chicken Biryani",
-    "aliases": ["biryani", "hyderabadi biryani", "dum biryani"],
+    "aliases": [
+      "biryani",
+      "hyderabadi biryani",
+      "dum biryani",
+      "biryani with raita"
+    ],
     "category": "rice_dish",
-    "region": ["hyderabad", "lucknow", "all_india"],
-    "base_calories_per_100g": 175,
+    "region": [
+      "hyderabad",
+      "lucknow",
+      "all_india"
+    ],
+    "base_calories_per_100g": 170,
     "portions": {
-      "1 katori (~200g)": { "grams": 200, "calories": 350 },
-      "1 plate (~350g)": { "grams": 350, "calories": 610 },
-      "restaurant serving (~400g)": { "grams": 400, "calories": 700 },
-      "Swiggy/Zomato single serve (~450g)": { "grams": 450, "calories": 790 }
+      "1 katori (~200g)": {
+        "grams": 200,
+        "calories": 350
+      },
+      "1 plate (~350g)": {
+        "grams": 350,
+        "calories": 610
+      },
+      "restaurant serving (~400g)": {
+        "grams": 400,
+        "calories": 700
+      },
+      "Swiggy/Zomato single serve (~450g)": {
+        "grams": 450,
+        "calories": 790
+      }
     },
     "preparations": {
-      "homemade (moderate oil)": { "multiplier": 1.0, "note": "Still ghee-rich" },
-      "restaurant/dum style": { "multiplier": 1.15, "note": "Extra ghee for flavor" },
-      "with raita": { "multiplier": 1.1, "note": "Raita adds ~50-70 cal" },
-      "with mirchi ka salan": { "multiplier": 1.15, "note": "Peanut-based gravy, calorie-dense" }
+      "homemade (moderate oil)": {
+        "multiplier": 1.0,
+        "note": "Still ghee-rich"
+      },
+      "restaurant/dum style": {
+        "multiplier": 1.15,
+        "note": "Extra ghee for flavor"
+      },
+      "with raita": {
+        "multiplier": 1.1,
+        "note": "Raita adds ~50-70 cal"
+      },
+      "with mirchi ka salan": {
+        "multiplier": 1.15,
+        "note": "Peanut-based gravy, calorie-dense"
+      }
     },
     "fun_facts": [
       "A Swiggy single-serve biryani is often 700-800 calories — nearly half a day's intake.",
       "The ghee layered between rice layers is what makes biryani calorie-dense vs plain rice + chicken.",
       "Hyderabadi biryani tends to be richer than Lucknowi because of the dum cooking with more fat."
     ],
-    "common_mistakes": ["Biryani is the most commonly underestimated Indian dish. People guess 400 when a Swiggy portion is 700-800."],
-    "visual_references": ["A standard delivery biryani container = ~400-450g = 700-800 cal"]
+    "common_mistakes": [
+      "Biryani is the most commonly underestimated Indian dish. People guess 400 when a Swiggy portion is 700-800."
+    ],
+    "visual_references": [
+      "A standard delivery biryani container = ~400-450g = 700-800 cal"
+    ],
+    "protein_per_100g": 8,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 7,
+    "accompaniments": {
+      "raita": {
+        "protein_g": 1.5,
+        "carbs_g": 2.0,
+        "fat_g": 1.5,
+        "grams": 50,
+        "default": false
+      },
+      "mirchi_salan": {
+        "protein_g": 1.0,
+        "carbs_g": 3.0,
+        "fat_g": 4.0,
+        "grams": 50,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "samosa",
     "display_name": "Samosa",
-    "aliases": ["singara", "sambosa"],
+    "aliases": [
+      "singara",
+      "sambosa"
+    ],
     "category": "snack",
-    "region": ["all_india"],
-    "base_calories_per_100g": 250,
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 308,
     "portions": {
-      "1 small samosa (~60g)": { "grams": 60, "calories": 150 },
-      "1 regular samosa (~100g)": { "grams": 100, "calories": 250 },
-      "1 large/restaurant samosa (~130g)": { "grams": 130, "calories": 325 }
+      "1 small samosa (~60g)": {
+        "grams": 60,
+        "calories": 150
+      },
+      "1 regular samosa (~100g)": {
+        "grams": 100,
+        "calories": 250
+      },
+      "1 large/restaurant samosa (~130g)": {
+        "grams": 130,
+        "calories": 325
+      }
     },
     "preparations": {
-      "standard fried": { "multiplier": 1.0, "note": "Deep fried in oil" },
-      "baked": { "multiplier": 0.7, "note": "Significantly less oil" },
-      "with chole": { "multiplier": 1.4, "note": "Samosa chole adds another ~100 cal" }
+      "standard fried": {
+        "multiplier": 1.0,
+        "note": "Deep fried in oil"
+      },
+      "baked": {
+        "multiplier": 0.7,
+        "note": "Significantly less oil"
+      },
+      "with chole": {
+        "multiplier": 1.4,
+        "note": "Samosa chole adds another ~100 cal"
+      }
     },
     "fun_facts": [
       "2 regular samosas = about 500 calories, roughly the same as a full meal.",
       "The outer pastry shell absorbs a LOT of oil during frying — that's where most calories hide.",
       "A baked samosa has about 30% fewer calories than a fried one."
     ],
-    "common_mistakes": ["'It's just a snack' — but 2 samosas with chutney = 550+ cal."],
-    "visual_references": ["1 regular samosa = roughly the size of your palm = ~250 cal"]
+    "common_mistakes": [
+      "'It's just a snack' — but 2 samosas with chutney = 550+ cal."
+    ],
+    "visual_references": [
+      "1 regular samosa = roughly the size of your palm = ~250 cal"
+    ],
+    "protein_per_100g": 4.7,
+    "carbs_per_100g": 32.2,
+    "fat_per_100g": 17.9,
+    "accompaniments": {
+      "mint_chutney": {
+        "protein_g": 0.2,
+        "carbs_g": 1.5,
+        "fat_g": 0.1,
+        "grams": 20,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "paratha",
     "display_name": "Paratha",
-    "aliases": ["parantha", "stuffed paratha", "layered bread"],
+    "aliases": [
+      "parantha",
+      "stuffed paratha",
+      "layered bread"
+    ],
     "category": "breakfast",
-    "region": ["north_india", "punjab", "haryana", "delhi"],
-    "base_calories_per_100g": 260,
+    "region": [
+      "north_india",
+      "punjab",
+      "haryana",
+      "delhi"
+    ],
+    "base_calories_per_100g": 335,
     "portions": {
-      "1 small plain paratha (~60g)": { "grams": 60, "calories": 160 },
-      "1 medium plain paratha (~80g)": { "grams": 80, "calories": 210 },
-      "1 aloo paratha (~120g)": { "grams": 120, "calories": 310 },
-      "1 paneer paratha (~130g)": { "grams": 130, "calories": 340 }
+      "1 small plain paratha (~60g)": {
+        "grams": 60,
+        "calories": 160
+      },
+      "1 medium plain paratha (~80g)": {
+        "grams": 80,
+        "calories": 210
+      },
+      "1 aloo paratha (~120g)": {
+        "grams": 120,
+        "calories": 310
+      },
+      "1 paneer paratha (~130g)": {
+        "grams": 130,
+        "calories": 340
+      }
     },
     "preparations": {
-      "plain layered": { "multiplier": 1.0, "note": "Oil/ghee in layers" },
-      "aloo stuffed": { "multiplier": 1.3, "note": "Potato filling adds carbs" },
-      "paneer stuffed": { "multiplier": 1.4, "note": "Paneer filling is calorie-dense" },
-      "gobhi (cauliflower)": { "multiplier": 1.15, "note": "Lighter filling than aloo" },
-      "with butter on top": { "multiplier": 1.25, "note": "The classic Punjabi finish — extra 50 cal" }
+      "plain layered": {
+        "multiplier": 1.0,
+        "note": "Oil/ghee in layers"
+      },
+      "aloo stuffed": {
+        "multiplier": 1.3,
+        "note": "Potato filling adds carbs"
+      },
+      "paneer stuffed": {
+        "multiplier": 1.4,
+        "note": "Paneer filling is calorie-dense"
+      },
+      "gobhi (cauliflower)": {
+        "multiplier": 1.15,
+        "note": "Lighter filling than aloo"
+      },
+      "with butter on top": {
+        "multiplier": 1.25,
+        "note": "The classic Punjabi finish — extra 50 cal"
+      }
     },
     "fun_facts": [
       "2 aloo parathas with butter and curd = 750-800 calories. That's a full meal's worth at breakfast.",
       "A restaurant paratha uses 2-3x more ghee/oil than a home-cooked one.",
       "The stuffing matters less than you think — the real calories are in the dough layers and cooking fat."
     ],
-    "common_mistakes": ["People focus on the stuffing (aloo vs gobhi) but ignore the ghee/butter. A 'light' gobhi paratha with extra butter = same as aloo."],
-    "visual_references": ["1 aloo paratha = roughly a dinner plate diameter = ~310 cal"]
+    "common_mistakes": [
+      "People focus on the stuffing (aloo vs gobhi) but ignore the ghee/butter. A 'light' gobhi paratha with extra butter = same as aloo."
+    ],
+    "visual_references": [
+      "1 aloo paratha = roughly a dinner plate diameter = ~310 cal"
+    ],
+    "protein_per_100g": 6.0,
+    "carbs_per_100g": 44,
+    "fat_per_100g": 15,
+    "accompaniments": {
+      "curd": {
+        "protein_g": 2.0,
+        "carbs_g": 2.5,
+        "fat_g": 1.5,
+        "grams": 50,
+        "default": false
+      },
+      "pickle": {
+        "protein_g": 0.1,
+        "carbs_g": 1.0,
+        "fat_g": 0.5,
+        "grams": 10,
+        "default": false
+      },
+      "butter": {
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 5.0,
+        "grams": 7,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "naan",
     "display_name": "Naan",
-    "aliases": ["tandoori naan", "naan bread"],
+    "aliases": [
+      "tandoori naan",
+      "naan bread"
+    ],
     "category": "staple",
-    "region": ["north_india", "all_india"],
-    "base_calories_per_100g": 290,
+    "region": [
+      "north_india",
+      "all_india"
+    ],
+    "base_calories_per_100g": 291,
     "portions": {
-      "1 regular naan (~90g)": { "grams": 90, "calories": 260 },
-      "1 butter naan (~100g)": { "grams": 100, "calories": 320 },
-      "1 garlic naan (~100g)": { "grams": 100, "calories": 310 }
+      "1 regular naan (~90g)": {
+        "grams": 90,
+        "calories": 260
+      },
+      "1 butter naan (~100g)": {
+        "grams": 100,
+        "calories": 320
+      },
+      "1 garlic naan (~100g)": {
+        "grams": 100,
+        "calories": 310
+      }
     },
     "preparations": {
-      "plain tandoori": { "multiplier": 1.0, "note": "Still has oil/ghee in dough" },
-      "butter naan": { "multiplier": 1.25, "note": "Brushed with butter after cooking" },
-      "garlic naan": { "multiplier": 1.2, "note": "Garlic butter topping" },
-      "cheese naan": { "multiplier": 1.5, "note": "Cheese stuffing adds major calories" },
-      "keema naan": { "multiplier": 1.4, "note": "Meat stuffing" }
+      "plain tandoori": {
+        "multiplier": 1.0,
+        "note": "Still has oil/ghee in dough"
+      },
+      "butter naan": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 2.0,
+        "note": "Brushed with butter after cooking"
+      },
+      "garlic naan": {
+        "multiplier": 1.2,
+        "note": "Garlic butter topping"
+      },
+      "cheese naan": {
+        "protein_multiplier": 1.3,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 2.5,
+        "note": "Cheese adds both protein and fat"
+      },
+      "keema naan": {
+        "multiplier": 1.4,
+        "note": "Meat stuffing"
+      }
     },
     "fun_facts": [
       "One butter naan has about 320 calories — nearly as much as a full plate of rice.",
       "Most people eat 2-3 naans with a curry, adding 600-900 calories just from bread.",
       "Naan uses maida (refined flour), yogurt, and oil in the dough — it's richer than roti by default."
     ],
-    "common_mistakes": ["Naan vs roti: people think they're similar, but one naan = 2.5 to 3 rotis in calories."],
-    "visual_references": ["1 naan = roughly the size of a large hand spread = ~260 cal plain"]
+    "common_mistakes": [
+      "Naan vs roti: people think they're similar, but one naan = 2.5 to 3 rotis in calories."
+    ],
+    "visual_references": [
+      "1 naan = roughly the size of a large hand spread = ~260 cal plain"
+    ],
+    "protein_per_100g": 9.6,
+    "carbs_per_100g": 50,
+    "fat_per_100g": 5.7
   },
   {
     "canonical_name": "chole",
     "display_name": "Chole (Chickpea Curry)",
-    "aliases": ["chana masala", "chole masala", "chhole", "chickpea curry"],
+    "aliases": [
+      "chana masala",
+      "chole masala",
+      "chhole",
+      "chickpea curry",
+      "chole chawal",
+      "chole rice",
+      "chole_chawal",
+      "chana masala with rice"
+    ],
     "category": "curry",
-    "region": ["north_india", "punjab", "delhi"],
-    "base_calories_per_100g": 120,
+    "region": [
+      "north_india",
+      "punjab",
+      "delhi"
+    ],
+    "base_calories_per_100g": 130,
     "portions": {
-      "1 katori (~150g)": { "grams": 150, "calories": 180 },
-      "1 bowl (~250g)": { "grams": 250, "calories": 300 },
-      "chole bhature serving (~200g chole)": { "grams": 200, "calories": 240 }
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 180
+      },
+      "1 bowl (~250g)": {
+        "grams": 250,
+        "calories": 300
+      },
+      "chole bhature serving (~200g chole)": {
+        "grams": 200,
+        "calories": 240
+      }
     },
     "preparations": {
-      "homemade": { "multiplier": 1.0, "note": "Moderate oil" },
-      "restaurant/dhaba": { "multiplier": 1.3, "note": "Extra oil and butter" },
-      "chole bhature combo": { "multiplier": 3.0, "note": "Bhatura alone is 300+ cal. Full combo = 600-700" }
+      "homemade": {
+        "multiplier": 1.0,
+        "note": "Moderate oil"
+      },
+      "restaurant/dhaba": {
+        "multiplier": 1.3,
+        "note": "Extra oil and butter"
+      },
+      "chole bhature combo": {
+        "multiplier": 3.0,
+        "note": "Bhatura alone is 300+ cal. Full combo = 600-700"
+      }
     },
     "fun_facts": [
       "Chole alone is actually quite healthy — high protein, high fiber. The problem is what you eat it WITH.",
       "A chole bhature plate at a dhaba can be 700-800 calories total.",
       "Chickpeas are one of the best plant protein sources at ~19g protein per 100g dry."
     ],
-    "common_mistakes": ["Chole bhature: people think of it as one dish but it's really 250 cal (chole) + 350 cal (bhatura) + oil."],
-    "visual_references": ["1 katori chole = tennis ball volume = ~180 cal"]
+    "common_mistakes": [
+      "Chole bhature: people think of it as one dish but it's really 250 cal (chole) + 350 cal (bhatura) + oil."
+    ],
+    "visual_references": [
+      "1 katori chole = tennis ball volume = ~180 cal"
+    ],
+    "protein_per_100g": 5,
+    "carbs_per_100g": 16,
+    "fat_per_100g": 5,
+    "accompaniments": {
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      },
+      "bhatura": {
+        "protein_g": 4.4,
+        "carbs_g": 33.6,
+        "fat_g": 11.2,
+        "grams": 80,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "pav_bhaji",
     "display_name": "Pav Bhaji",
-    "aliases": ["pav bhajji"],
+    "aliases": [
+      "pav bhajji",
+      "pav bhaji plate"
+    ],
     "category": "street_food",
-    "region": ["maharashtra", "mumbai", "gujarat"],
-    "base_calories_per_100g": 130,
+    "region": [
+      "maharashtra",
+      "mumbai",
+      "gujarat"
+    ],
+    "base_calories_per_100g": 160,
     "portions": {
-      "1 plate (bhaji ~200g + 2 pav)": { "grams": 350, "calories": 550 },
-      "street stall plate (extra butter)": { "grams": 350, "calories": 650 }
+      "1 plate (bhaji ~200g + 2 pav)": {
+        "grams": 350,
+        "calories": 550
+      },
+      "street stall plate (extra butter)": {
+        "grams": 350,
+        "calories": 650
+      }
     },
     "preparations": {
-      "homemade (less butter)": { "multiplier": 1.0, "note": "Still uses butter" },
-      "street stall / Juhu Beach style": { "multiplier": 1.3, "note": "Drowning in Amul butter" },
-      "restaurant": { "multiplier": 1.15, "note": "Generous but not street-level" }
+      "homemade (less butter)": {
+        "multiplier": 1.0,
+        "note": "Still uses butter"
+      },
+      "street stall / Juhu Beach style": {
+        "multiplier": 1.3,
+        "note": "Drowning in Amul butter"
+      },
+      "restaurant": {
+        "multiplier": 1.15,
+        "note": "Generous but not street-level"
+      }
     },
     "fun_facts": [
       "Street-side pav bhaji uses an obscene amount of butter — some vendors use a quarter block per plate.",
       "The pav (bread) alone is ~150 cal per piece. Most plates come with 2-3 pavs.",
       "The bhaji is mostly vegetables and is the healthier part — it's the butter and pav that add up."
     ],
-    "common_mistakes": ["'It's just vegetables and bread' — a street pav bhaji plate can be 600-700 calories."],
-    "visual_references": ["1 street plate = ~550-650 cal with standard 2 pav"]
+    "common_mistakes": [
+      "'It's just vegetables and bread' — a street pav bhaji plate can be 600-700 calories."
+    ],
+    "visual_references": [
+      "1 street plate = ~550-650 cal with standard 2 pav"
+    ],
+    "protein_per_100g": 4,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 7,
+    "accompaniments": {
+      "pav": {
+        "protein_g": 5.0,
+        "carbs_g": 30.0,
+        "fat_g": 4.0,
+        "grams": 80,
+        "default": true
+      }
+    }
   },
   {
     "canonical_name": "vada_pav",
     "display_name": "Vada Pav",
-    "aliases": ["wada pav", "batata vada pav", "Indian burger"],
+    "aliases": [
+      "wada pav",
+      "batata vada pav",
+      "Indian burger"
+    ],
     "category": "street_food",
-    "region": ["maharashtra", "mumbai"],
-    "base_calories_per_100g": 220,
+    "region": [
+      "maharashtra",
+      "mumbai"
+    ],
+    "base_calories_per_100g": 217,
     "portions": {
-      "1 regular vada pav (~150g)": { "grams": 150, "calories": 290 },
-      "1 large vada pav (~180g)": { "grams": 180, "calories": 350 }
+      "1 regular vada pav (~150g)": {
+        "grams": 150,
+        "calories": 290
+      },
+      "1 large vada pav (~180g)": {
+        "grams": 180,
+        "calories": 350
+      }
     },
     "preparations": {
-      "standard": { "multiplier": 1.0, "note": "Fried vada in pav with chutneys" },
-      "cheese vada pav": { "multiplier": 1.25, "note": "Cheese slice adds ~70 cal" },
-      "schezwan vada pav": { "multiplier": 1.1, "note": "Schezwan sauce adds some" }
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Fried vada in pav with chutneys"
+      },
+      "cheese vada pav": {
+        "multiplier": 1.25,
+        "note": "Cheese slice adds ~70 cal"
+      },
+      "schezwan vada pav": {
+        "multiplier": 1.1,
+        "note": "Schezwan sauce adds some"
+      }
     },
     "fun_facts": [
       "A vada pav has about the same calories as a McDonald's McAloo Tikki burger.",
       "It's called the 'Indian burger' for good reason — similar calorie density too.",
       "The deep-fried vada absorbs a lot of oil. That's where 40% of the calories come from."
     ],
-    "common_mistakes": ["Seems like a small snack, but at 290 cal each, 2 vada pavs = a full meal's calories."],
-    "visual_references": ["1 vada pav = roughly the size of a tennis ball in a bun = ~290 cal"]
+    "common_mistakes": [
+      "Seems like a small snack, but at 290 cal each, 2 vada pavs = a full meal's calories."
+    ],
+    "visual_references": [
+      "1 vada pav = roughly the size of a tennis ball in a bun = ~290 cal"
+    ],
+    "protein_per_100g": 6.6,
+    "carbs_per_100g": 28.7,
+    "fat_per_100g": 8.5,
+    "accompaniments": {
+      "green_chutney": {
+        "protein_g": 0.2,
+        "carbs_g": 1.0,
+        "fat_g": 0.1,
+        "grams": 15,
+        "default": false
+      },
+      "dry_garlic_chutney": {
+        "protein_g": 0.3,
+        "carbs_g": 1.5,
+        "fat_g": 0.5,
+        "grams": 10,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "upma",
     "display_name": "Upma",
-    "aliases": ["uppuma", "uppittu", "sooji upma"],
+    "aliases": [
+      "uppuma",
+      "uppittu",
+      "sooji upma"
+    ],
     "category": "breakfast",
-    "region": ["south_india", "maharashtra", "karnataka"],
-    "base_calories_per_100g": 120,
+    "region": [
+      "south_india",
+      "maharashtra",
+      "karnataka"
+    ],
+    "base_calories_per_100g": 155,
     "portions": {
-      "1 katori (~150g)": { "grams": 150, "calories": 180 },
-      "1 plate (~250g)": { "grams": 250, "calories": 300 }
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 180
+      },
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 300
+      }
     },
     "preparations": {
-      "plain rava upma": { "multiplier": 1.0, "note": "Standard semolina upma" },
-      "vegetable upma": { "multiplier": 1.05, "note": "Veggies add minimal calories" },
-      "with cashews & extra ghee": { "multiplier": 1.3, "note": "Nuts and ghee add up" }
+      "plain rava upma": {
+        "multiplier": 1.0,
+        "note": "Standard semolina upma"
+      },
+      "vegetable upma": {
+        "multiplier": 1.05,
+        "note": "Veggies add minimal calories"
+      },
+      "with cashews & extra ghee": {
+        "multiplier": 1.3,
+        "note": "Nuts and ghee add up"
+      }
     },
     "fun_facts": [
       "Upma and poha have very similar calories — upma just feels heavier because semolina is denser.",
       "The oil used for tempering can account for 25-30% of upma's total calories."
     ],
-    "common_mistakes": ["Upma seems lighter than poha but it's about the same. The semolina + oil tempering is calorie-comparable."],
-    "visual_references": ["1 plate upma = roughly the same as 1 plate poha = ~300 cal"]
+    "common_mistakes": [
+      "Upma seems lighter than poha but it's about the same. The semolina + oil tempering is calorie-comparable."
+    ],
+    "visual_references": [
+      "1 plate upma = roughly the same as 1 plate poha = ~300 cal"
+    ],
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 5.5
   },
   {
     "canonical_name": "rajma",
     "display_name": "Rajma (Kidney Bean Curry)",
-    "aliases": ["rajma chawal", "kidney bean curry", "rajma masala"],
+    "aliases": [
+      "rajma chawal",
+      "kidney bean curry",
+      "rajma masala",
+      "rajma_chawal",
+      "rajma rice",
+      "rajma with rice"
+    ],
     "category": "curry",
-    "region": ["north_india", "punjab", "delhi", "jammu"],
-    "base_calories_per_100g": 110,
+    "region": [
+      "north_india",
+      "punjab",
+      "delhi",
+      "jammu"
+    ],
+    "base_calories_per_100g": 120,
     "portions": {
-      "1 katori (~150g)": { "grams": 150, "calories": 165 },
-      "1 bowl (~250g)": { "grams": 250, "calories": 275 }
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 165
+      },
+      "1 bowl (~250g)": {
+        "grams": 250,
+        "calories": 275
+      }
     },
     "preparations": {
-      "homemade": { "multiplier": 1.0, "note": "Tomato-onion base" },
-      "restaurant": { "multiplier": 1.2, "note": "Extra oil" },
-      "rajma chawal combo": { "multiplier": 2.5, "note": "Full plate with rice = 550-650 cal" }
+      "homemade": {
+        "multiplier": 1.0,
+        "note": "Tomato-onion base"
+      },
+      "restaurant": {
+        "multiplier": 1.2,
+        "note": "Extra oil"
+      },
+      "rajma chawal combo": {
+        "multiplier": 2.5,
+        "note": "Full plate with rice = 550-650 cal"
+      }
     },
     "fun_facts": [
       "Rajma is one of the best plant protein sources — 24g protein per 100g dry beans.",
       "Rajma chawal is a complete protein meal — the rice and beans together provide all essential amino acids.",
       "A full rajma chawal plate (bowl of rajma + plate of rice) = about 550-650 calories."
     ],
-    "common_mistakes": ["People estimate rajma and rice separately and still get it wrong. The combo is 550-650 cal."],
-    "visual_references": ["1 katori rajma = tennis ball = ~165 cal; add 1 plate rice = 425 total"]
+    "common_mistakes": [
+      "People estimate rajma and rice separately and still get it wrong. The combo is 550-650 cal."
+    ],
+    "visual_references": [
+      "1 katori rajma = tennis ball = ~165 cal; add 1 plate rice = 425 total"
+    ],
+    "protein_per_100g": 5,
+    "carbs_per_100g": 14,
+    "fat_per_100g": 5,
+    "accompaniments": {
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "chai",
     "display_name": "Chai (Indian Tea)",
-    "aliases": ["tea", "masala chai", "cutting chai", "ginger tea"],
+    "aliases": [
+      "tea",
+      "masala chai",
+      "cutting chai",
+      "ginger tea"
+    ],
     "category": "beverage",
-    "region": ["all_india"],
-    "base_calories_per_100g": 35,
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 36,
     "portions": {
-      "1 cutting chai (~80ml)": { "grams": 80, "calories": 30 },
-      "1 regular cup (~150ml)": { "grams": 150, "calories": 55 },
-      "1 large cup (~250ml)": { "grams": 250, "calories": 90 }
+      "1 cutting chai (~80ml)": {
+        "grams": 80,
+        "calories": 30
+      },
+      "1 regular cup (~150ml)": {
+        "grams": 150,
+        "calories": 55
+      },
+      "1 large cup (~250ml)": {
+        "grams": 250,
+        "calories": 90
+      }
     },
     "preparations": {
-      "black tea (no milk/sugar)": { "multiplier": 0.1, "note": "Almost zero calories" },
-      "with milk + 1 tsp sugar": { "multiplier": 1.0, "note": "Standard preparation" },
-      "with milk + 2 tsp sugar": { "multiplier": 1.35, "note": "Extra sugar adds ~20 cal per tsp" },
-      "chai latte (cafe style)": { "multiplier": 2.0, "note": "More milk, often full cream" }
+      "black tea (no milk/sugar)": {
+        "multiplier": 0.1,
+        "note": "Almost zero calories"
+      },
+      "with milk + 1 tsp sugar": {
+        "multiplier": 1.0,
+        "note": "Standard preparation"
+      },
+      "with milk + 2 tsp sugar": {
+        "multiplier": 1.35,
+        "note": "Extra sugar adds ~20 cal per tsp"
+      },
+      "chai latte (cafe style)": {
+        "multiplier": 2.0,
+        "note": "More milk, often full cream"
+      }
     },
     "fun_facts": [
       "3-4 cups of regular chai per day = 200-350 extra calories that most people don't count.",
       "The sugar in chai is the hidden calorie bomb. Each teaspoon adds ~20 calories.",
       "A cutting chai from a tapri is one of the lowest-calorie warm beverages at just 30 cal."
     ],
-    "common_mistakes": ["Nobody counts chai calories. 4 cups/day with 2 tsp sugar each = 300+ invisible calories."],
-    "visual_references": ["1 regular cup = ~55 cal; cutting chai = ~30 cal"]
+    "common_mistakes": [
+      "Nobody counts chai calories. 4 cups/day with 2 tsp sugar each = 300+ invisible calories."
+    ],
+    "visual_references": [
+      "1 regular cup = ~55 cal; cutting chai = ~30 cal"
+    ],
+    "protein_per_100g": 0.8,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 1.2
   },
   {
     "canonical_name": "gulab_jamun",
     "display_name": "Gulab Jamun",
-    "aliases": ["gulab jaman", "GJ"],
+    "aliases": [
+      "gulab jaman",
+      "GJ"
+    ],
     "category": "dessert",
-    "region": ["all_india"],
-    "base_calories_per_100g": 325,
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 310,
     "portions": {
-      "1 piece (~40g)": { "grams": 40, "calories": 130 },
-      "2 pieces (~80g)": { "grams": 80, "calories": 260 },
-      "3 pieces with syrup (~140g)": { "grams": 140, "calories": 450 }
+      "1 piece (~40g)": {
+        "grams": 40,
+        "calories": 130
+      },
+      "2 pieces (~80g)": {
+        "grams": 80,
+        "calories": 260
+      },
+      "3 pieces with syrup (~140g)": {
+        "grams": 140,
+        "calories": 450
+      }
     },
     "preparations": {
-      "standard (sugar syrup)": { "multiplier": 1.0, "note": "Deep fried + soaked in sugar" },
-      "dry gulab jamun": { "multiplier": 0.8, "note": "Less syrup absorbed" }
+      "standard (sugar syrup)": {
+        "multiplier": 1.0,
+        "note": "Deep fried + soaked in sugar"
+      },
+      "dry gulab jamun": {
+        "multiplier": 0.8,
+        "note": "Less syrup absorbed"
+      }
     },
     "fun_facts": [
       "Each gulab jamun is a calorie triple threat: deep fried dough + soaked in sugar syrup + made from khoya (reduced milk).",
       "2 gulab jamuns = 260 calories, roughly the same as a full bowl of dal chawal.",
       "The sugar syrup alone accounts for about 40% of the calories."
     ],
-    "common_mistakes": ["They're small so people eat 3-4. That's 400-500 calories of pure sugar and fat."],
-    "visual_references": ["1 gulab jamun = roughly the size of a golf ball = ~130 cal"]
+    "common_mistakes": [
+      "They're small so people eat 3-4. That's 400-500 calories of pure sugar and fat."
+    ],
+    "visual_references": [
+      "1 gulab jamun = roughly the size of a golf ball = ~130 cal"
+    ],
+    "protein_per_100g": 5,
+    "carbs_per_100g": 50,
+    "fat_per_100g": 10
   },
   {
     "canonical_name": "jalebi",
     "display_name": "Jalebi",
-    "aliases": ["jilapi", "zulbia"],
+    "aliases": [
+      "jilapi",
+      "zulbia"
+    ],
     "category": "dessert",
-    "region": ["all_india", "rajasthan", "uttar_pradesh"],
-    "base_calories_per_100g": 380,
+    "region": [
+      "all_india",
+      "rajasthan",
+      "uttar_pradesh"
+    ],
+    "base_calories_per_100g": 300,
     "portions": {
-      "1 piece (~30g)": { "grams": 30, "calories": 115 },
-      "small plate (~80g, 2-3 pieces)": { "grams": 80, "calories": 300 },
-      "with rabri (~150g combo)": { "grams": 150, "calories": 520 }
+      "1 piece (~30g)": {
+        "grams": 30,
+        "calories": 115
+      },
+      "small plate (~80g, 2-3 pieces)": {
+        "grams": 80,
+        "calories": 300
+      },
+      "with rabri (~150g combo)": {
+        "grams": 150,
+        "calories": 520
+      }
     },
     "preparations": {
-      "standard": { "multiplier": 1.0, "note": "Deep fried and sugar syrup soaked" },
-      "with rabri/cream": { "multiplier": 1.7, "note": "Rabri adds 150-200 cal" }
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Deep fried and sugar syrup soaked"
+      },
+      "with rabri/cream": {
+        "multiplier": 1.7,
+        "note": "Rabri adds 150-200 cal"
+      }
     },
     "fun_facts": [
       "Jalebi is one of the most calorie-dense Indian sweets at 380 cal per 100g.",
       "A small plate of jalebi with rabri can be 500+ calories — basically a full meal.",
       "The deep frying + sugar syrup soak is a calorie double hit."
     ],
-    "common_mistakes": ["They look light and airy, but each jalebi ring is soaked in sugar syrup and fried. 3 pieces = 300+ cal."],
-    "visual_references": ["1 jalebi ring = ~115 cal; a standard plate = ~300 cal"]
+    "common_mistakes": [
+      "They look light and airy, but each jalebi ring is soaked in sugar syrup and fried. 3 pieces = 300+ cal."
+    ],
+    "visual_references": [
+      "1 jalebi ring = ~115 cal; a standard plate = ~300 cal"
+    ],
+    "protein_per_100g": 4.2,
+    "carbs_per_100g": 62.4,
+    "fat_per_100g": 4.3
   },
   {
     "canonical_name": "pani_puri",
     "display_name": "Pani Puri / Golgappa",
-    "aliases": ["golgappa", "puchka", "gupchup", "phulki"],
+    "aliases": [
+      "golgappa",
+      "puchka",
+      "gupchup",
+      "phulki"
+    ],
     "category": "street_food",
-    "region": ["all_india"],
-    "base_calories_per_100g": 200,
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 170,
     "portions": {
-      "1 piece (~20g)": { "grams": 20, "calories": 40 },
-      "6 pieces (1 plate)": { "grams": 120, "calories": 240 },
-      "10 pieces": { "grams": 200, "calories": 400 }
+      "1 piece (~20g)": {
+        "grams": 20,
+        "calories": 40
+      },
+      "6 pieces (1 plate)": {
+        "grams": 120,
+        "calories": 240
+      },
+      "10 pieces": {
+        "grams": 200,
+        "calories": 400
+      }
     },
     "preparations": {
-      "standard (pani + aloo filling)": { "multiplier": 1.0, "note": "Fried puri + potato + spiced water" },
-      "dahi puri": { "multiplier": 1.3, "note": "Yogurt + chutneys add calories" },
-      "sev puri": { "multiplier": 1.2, "note": "Sev and chutneys on top" }
+      "standard (pani + aloo filling)": {
+        "multiplier": 1.0,
+        "note": "Fried puri + potato + spiced water"
+      },
+      "dahi puri": {
+        "multiplier": 1.3,
+        "note": "Yogurt + chutneys add calories"
+      },
+      "sev puri": {
+        "multiplier": 1.2,
+        "note": "Sev and chutneys on top"
+      }
     },
     "fun_facts": [
       "Each tiny pani puri is about 40 calories. A standard serving of 6 = 240 calories.",
       "The puri shell is deep fried — that's where most calories hide, not the water filling.",
       "Nobody stops at 6. A typical street-side session of 10-12 puris = 400-500 calories."
     ],
-    "common_mistakes": ["'It's just water and a tiny shell' — but 10 puris = 400 cal, mainly from the fried shells."],
-    "visual_references": ["1 pani puri = ping pong ball size = ~40 cal each"]
+    "common_mistakes": [
+      "'It's just water and a tiny shell' — but 10 puris = 400 cal, mainly from the fried shells."
+    ],
+    "visual_references": [
+      "1 pani puri = ping pong ball size = ~40 cal each"
+    ],
+    "protein_per_100g": 4,
+    "carbs_per_100g": 25,
+    "fat_per_100g": 6
   },
   {
     "canonical_name": "maggi",
     "display_name": "Maggi Noodles",
-    "aliases": ["instant noodles", "2-minute noodles"],
+    "aliases": [
+      "instant noodles",
+      "2-minute noodles"
+    ],
     "category": "snack",
-    "region": ["all_india"],
-    "base_calories_per_100g": 390,
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 150,
     "portions": {
-      "1 single pack (70g dry)": { "grams": 70, "calories": 310 },
-      "1 pack with extra veggies": { "grams": 70, "calories": 330 },
-      "double pack": { "grams": 140, "calories": 620 }
+      "1 single pack (70g dry)": {
+        "grams": 70,
+        "calories": 310
+      },
+      "1 pack with extra veggies": {
+        "grams": 70,
+        "calories": 330
+      },
+      "double pack": {
+        "grams": 140,
+        "calories": 620
+      }
     },
     "preparations": {
-      "standard (as per packet)": { "multiplier": 1.0, "note": "With tastemaker" },
-      "with extra butter": { "multiplier": 1.15, "note": "Common hostel style" },
-      "with cheese": { "multiplier": 1.2, "note": "Cheese slice adds ~70 cal" },
-      "with egg": { "multiplier": 1.25, "note": "Egg adds ~70 cal" }
+      "standard (as per packet)": {
+        "multiplier": 1.0,
+        "note": "With tastemaker"
+      },
+      "with extra butter": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 1.8,
+        "note": "Butter hostel style"
+      },
+      "with cheese": {
+        "protein_multiplier": 1.15,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 1.6,
+        "note": "Cheese adds protein and fat"
+      },
+      "with egg": {
+        "protein_multiplier": 1.5,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 1.4,
+        "note": "Egg adds significant protein"
+      }
     },
     "fun_facts": [
       "A single Maggi pack is 310 calories — not terrible for a snack, but most people cook two packs.",
       "60% of Maggi's calories come from the noodle block (fried before packaging), not the masala.",
       "Hostel Maggi with butter, cheese, and egg can hit 500+ calories easily."
     ],
-    "common_mistakes": ["Double pack Maggi is 620 cal — that's a full meal but most people eat it AS a snack on top of meals."],
-    "visual_references": ["1 pack cooked = roughly a large bowl = ~310 cal"]
+    "common_mistakes": [
+      "Double pack Maggi is 620 cal — that's a full meal but most people eat it AS a snack on top of meals."
+    ],
+    "visual_references": [
+      "1 pack cooked = roughly a large bowl = ~310 cal"
+    ],
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 6
   },
   {
     "canonical_name": "egg_bhurji",
     "display_name": "Egg Bhurji (Scrambled Eggs Indian Style)",
-    "aliases": ["anda bhurji", "scrambled eggs", "egg masala"],
+    "aliases": [
+      "anda bhurji",
+      "scrambled eggs",
+      "egg masala"
+    ],
     "category": "breakfast",
-    "region": ["all_india"],
-    "base_calories_per_100g": 170,
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 154,
     "portions": {
-      "2-egg bhurji (~120g)": { "grams": 120, "calories": 200 },
-      "3-egg bhurji (~180g)": { "grams": 180, "calories": 300 }
+      "2-egg bhurji (~120g)": {
+        "grams": 120,
+        "calories": 200
+      },
+      "3-egg bhurji (~180g)": {
+        "grams": 180,
+        "calories": 300
+      }
     },
     "preparations": {
-      "light oil": { "multiplier": 1.0, "note": "Minimal oil, onion-tomato base" },
-      "with butter": { "multiplier": 1.2, "note": "Butter adds richness and calories" },
-      "with cheese": { "multiplier": 1.35, "note": "Cheese melt on top" },
-      "anda pav (with pav)": { "multiplier": 1.6, "note": "Each pav adds ~150 cal" }
+      "light oil": {
+        "multiplier": 1.0,
+        "note": "Minimal oil, onion-tomato base"
+      },
+      "with butter": {
+        "multiplier": 1.2,
+        "note": "Butter adds richness and calories"
+      },
+      "with cheese": {
+        "multiplier": 1.35,
+        "note": "Cheese melt on top"
+      },
+      "anda pav (with pav)": {
+        "multiplier": 1.6,
+        "note": "Each pav adds ~150 cal"
+      }
     },
     "fun_facts": [
       "Egg bhurji is one of the best protein-to-calorie ratios in Indian street food.",
       "2-egg bhurji with light oil = 200 cal with 14g protein. Hard to beat that.",
       "The street-side anda pav version doubles the calories because of the buttered pav."
     ],
-    "common_mistakes": ["The bhurji itself is fine. It's the 2 buttered pavs that turn a 200-cal snack into 500 cal."],
-    "visual_references": ["2-egg bhurji = roughly half a plate = ~200 cal"]
+    "common_mistakes": [
+      "The bhurji itself is fine. It's the 2 buttered pavs that turn a 200-cal snack into 500 cal."
+    ],
+    "visual_references": [
+      "2-egg bhurji = roughly half a plate = ~200 cal"
+    ],
+    "protein_per_100g": 10,
+    "carbs_per_100g": 3.5,
+    "fat_per_100g": 11
   },
   {
     "canonical_name": "lassi",
     "display_name": "Lassi",
-    "aliases": ["sweet lassi", "mango lassi", "salted lassi", "chaas"],
+    "aliases": [
+      "sweet lassi",
+      "mango lassi",
+      "salted lassi",
+      "chaas"
+    ],
     "category": "beverage",
-    "region": ["north_india", "punjab", "rajasthan"],
-    "base_calories_per_100g": 70,
+    "region": [
+      "north_india",
+      "punjab",
+      "rajasthan"
+    ],
+    "base_calories_per_100g": 65,
     "portions": {
-      "1 glass sweet lassi (~250ml)": { "grams": 250, "calories": 175 },
-      "1 glass mango lassi (~250ml)": { "grams": 250, "calories": 210 },
-      "1 glass salted lassi/chaas (~250ml)": { "grams": 250, "calories": 70 },
-      "Punjabi tall glass (~400ml)": { "grams": 400, "calories": 280 }
+      "1 glass sweet lassi (~250ml)": {
+        "grams": 250,
+        "calories": 175
+      },
+      "1 glass mango lassi (~250ml)": {
+        "grams": 250,
+        "calories": 210
+      },
+      "1 glass salted lassi/chaas (~250ml)": {
+        "grams": 250,
+        "calories": 70
+      },
+      "Punjabi tall glass (~400ml)": {
+        "grams": 400,
+        "calories": 280
+      }
     },
     "preparations": {
-      "sweet (sugar + yogurt)": { "multiplier": 1.0, "note": "Standard sweet version" },
-      "mango": { "multiplier": 1.2, "note": "Mango pulp adds sugar" },
-      "salted/plain": { "multiplier": 0.4, "note": "Much lower cal without sugar" },
-      "with malai/cream": { "multiplier": 1.4, "note": "Cream top adds fat" }
+      "sweet (sugar + yogurt)": {
+        "multiplier": 1.0,
+        "note": "Standard sweet version"
+      },
+      "mango": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.5,
+        "fat_multiplier": 1.0,
+        "note": "Mango pulp adds carbs/sugar, not fat"
+      },
+      "salted/plain": {
+        "multiplier": 0.4,
+        "note": "Much lower cal without sugar"
+      },
+      "with malai/cream": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 2.5,
+        "note": "Cream top adds fat"
+      }
     },
     "fun_facts": [
       "A Punjabi tall glass sweet lassi = 280 cal. That's a liquid meal people drink alongside their actual meal.",
       "Switching from sweet to salted lassi saves 100+ calories per glass.",
       "Mango lassi at restaurants often uses sugar AND mango pulp — double sweetness, 200+ cal."
     ],
-    "common_mistakes": ["Beverages don't register as 'food' mentally. A tall lassi adds 280 cal to a meal without feeling like it."],
-    "visual_references": ["1 regular glass = ~175 cal sweet; ~70 cal salted"]
+    "common_mistakes": [
+      "Beverages don't register as 'food' mentally. A tall lassi adds 280 cal to a meal without feeling like it."
+    ],
+    "visual_references": [
+      "1 regular glass = ~175 cal sweet; ~70 cal salted"
+    ],
+    "protein_per_100g": 1.5,
+    "carbs_per_100g": 10.5,
+    "fat_per_100g": 1.5
   },
   {
     "canonical_name": "aloo_gobi",
     "display_name": "Aloo Gobi",
-    "aliases": ["aloo gobhi", "potato cauliflower", "cauliflower potato curry"],
+    "aliases": [
+      "aloo gobhi",
+      "potato cauliflower",
+      "cauliflower potato curry",
+      "aloo gobi with roti",
+      "aloo gobi roti"
+    ],
     "category": "curry",
-    "region": ["north_india", "punjab"],
-    "base_calories_per_100g": 95,
+    "region": [
+      "north_india",
+      "punjab"
+    ],
+    "base_calories_per_100g": 75,
     "portions": {
-      "1 katori (~150g)": { "grams": 150, "calories": 145 },
-      "1 bowl (~250g)": { "grams": 250, "calories": 240 }
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 145
+      },
+      "1 bowl (~250g)": {
+        "grams": 250,
+        "calories": 240
+      }
     },
     "preparations": {
-      "dry/sukhi (less oil)": { "multiplier": 1.0, "note": "Pan-cooked with moderate oil" },
-      "gravy style": { "multiplier": 1.15, "note": "Onion-tomato gravy adds some" },
-      "restaurant style": { "multiplier": 1.3, "note": "Extra oil for flavor" },
-      "deep fried gobi + aloo": { "multiplier": 1.8, "note": "Pre-frying the veggies changes everything" }
+      "dry/sukhi (less oil)": {
+        "multiplier": 1.0,
+        "note": "Pan-cooked with moderate oil"
+      },
+      "gravy style": {
+        "multiplier": 1.15,
+        "note": "Onion-tomato gravy adds some"
+      },
+      "restaurant style": {
+        "multiplier": 1.3,
+        "note": "Extra oil for flavor"
+      },
+      "deep fried gobi + aloo": {
+        "multiplier": 1.8,
+        "note": "Pre-frying the veggies changes everything"
+      }
     },
     "fun_facts": [
       "Aloo gobi is one of the lighter curries — if it's not deep-fried first.",
       "The difference between a home-cooked and restaurant aloo gobi can be 50-70% more calories due to oil.",
       "Cauliflower is only 25 cal/100g. The potato and oil are doing all the calorie work."
     ],
-    "common_mistakes": ["Restaurant versions often deep-fry the cauliflower first, which almost doubles the calories vs. home-cooked."],
-    "visual_references": ["1 katori = ~145 cal homemade — a lighter curry option"]
+    "common_mistakes": [
+      "Restaurant versions often deep-fry the cauliflower first, which almost doubles the calories vs. home-cooked."
+    ],
+    "visual_references": [
+      "1 katori = ~145 cal homemade — a lighter curry option"
+    ],
+    "protein_per_100g": 2,
+    "carbs_per_100g": 10,
+    "fat_per_100g": 3,
+    "accompaniments": {
+      "roti": {
+        "protein_g": 3.0,
+        "carbs_g": 17.6,
+        "fat_g": 1.4,
+        "grams": 40,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "palak_paneer",
     "display_name": "Palak Paneer",
-    "aliases": ["saag paneer", "spinach paneer", "spinach cottage cheese"],
+    "aliases": [
+      "saag paneer",
+      "spinach paneer",
+      "spinach cottage cheese",
+      "palak paneer with naan",
+      "saag paneer with roti",
+      "palak paneer with roti"
+    ],
     "category": "curry",
-    "region": ["north_india", "punjab"],
-    "base_calories_per_100g": 140,
+    "region": [
+      "north_india",
+      "punjab"
+    ],
+    "base_calories_per_100g": 96,
     "portions": {
-      "1 katori (~150g)": { "grams": 150, "calories": 210 },
-      "1 bowl (~250g)": { "grams": 250, "calories": 350 }
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 210
+      },
+      "1 bowl (~250g)": {
+        "grams": 250,
+        "calories": 350
+      }
     },
     "preparations": {
-      "homemade": { "multiplier": 1.0, "note": "Moderate cream/butter" },
-      "restaurant": { "multiplier": 1.3, "note": "More cream for richness" }
+      "homemade": {
+        "multiplier": 1.0,
+        "note": "Moderate cream/butter"
+      },
+      "restaurant": {
+        "multiplier": 1.3,
+        "note": "More cream for richness"
+      }
     },
     "fun_facts": [
       "The spinach (palak) in palak paneer is practically zero calories. It's the paneer and cream doing the heavy lifting.",
       "100g of paneer = 265 calories. A standard portion of palak paneer has about 100-150g of paneer in it.",
       "Switching to tofu instead of paneer saves about 40% calories."
     ],
-    "common_mistakes": ["'Green = healthy' — but the paneer and cream make this a 350+ cal dish per restaurant bowl."],
-    "visual_references": ["1 katori = ~210 cal; restaurant bowl = ~350 cal"]
+    "common_mistakes": [
+      "'Green = healthy' — but the paneer and cream make this a 350+ cal dish per restaurant bowl."
+    ],
+    "visual_references": [
+      "1 katori = ~210 cal; restaurant bowl = ~350 cal"
+    ],
+    "protein_per_100g": 5.3,
+    "carbs_per_100g": 4.3,
+    "fat_per_100g": 6.9,
+    "accompaniments": {
+      "naan": {
+        "protein_g": 9.6,
+        "carbs_g": 50,
+        "fat_g": 5.7,
+        "grams": 90,
+        "default": false
+      },
+      "roti": {
+        "protein_g": 3.0,
+        "carbs_g": 17.6,
+        "fat_g": 1.4,
+        "grams": 40,
+        "default": false
+      },
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      }
+    }
   },
   {
     "canonical_name": "banana",
     "display_name": "Banana",
-    "aliases": ["kela", "plantain"],
+    "aliases": [
+      "kela",
+      "plantain"
+    ],
     "category": "fruit",
-    "region": ["all_india"],
+    "region": [
+      "all_india"
+    ],
     "base_calories_per_100g": 89,
     "portions": {
-      "1 small banana (~80g)": { "grams": 80, "calories": 72 },
-      "1 medium banana (~120g)": { "grams": 120, "calories": 105 },
-      "1 large banana (~150g)": { "grams": 150, "calories": 135 }
+      "1 small banana (~80g)": {
+        "grams": 80,
+        "calories": 72
+      },
+      "1 medium banana (~120g)": {
+        "grams": 120,
+        "calories": 105
+      },
+      "1 large banana (~150g)": {
+        "grams": 150,
+        "calories": 135
+      }
     },
     "preparations": {
-      "raw": { "multiplier": 1.0, "note": "Standard fruit" },
-      "banana shake (with milk + sugar)": { "multiplier": 2.5, "note": "250-300 cal per glass" },
-      "deep fried (Kerala style)": { "multiplier": 2.0, "note": "Doubles the calories" }
+      "raw": {
+        "multiplier": 1.0,
+        "note": "Standard fruit"
+      },
+      "banana shake (with milk + sugar)": {
+        "multiplier": 2.5,
+        "note": "250-300 cal per glass"
+      },
+      "deep fried (Kerala style)": {
+        "multiplier": 2.0,
+        "note": "Doubles the calories"
+      }
     },
     "fun_facts": [
       "A medium banana is ~105 cal. It's one of the easiest food items to remember for calibration.",
       "Banana is the gold standard reference food: if you can estimate a banana, you can estimate most fruits.",
       "A banana shake with full cream milk and sugar = 250-300 cal. The banana is the least of it."
     ],
-    "common_mistakes": ["People often think bananas are higher calorie than they are. A medium banana = just 105 cal."],
-    "visual_references": ["1 medium banana = ~105 cal — use this as your mental calibration anchor"]
+    "common_mistakes": [
+      "People often think bananas are higher calorie than they are. A medium banana = just 105 cal."
+    ],
+    "visual_references": [
+      "1 medium banana = ~105 cal — use this as your mental calibration anchor"
+    ],
+    "protein_per_100g": 1.1,
+    "carbs_per_100g": 22.8,
+    "fat_per_100g": 0.3
+  },
+  {
+    "canonical_name": "medu_vada",
+    "display_name": "Medu Vada",
+    "aliases": [
+      "vada",
+      "ulundu vadai",
+      "urad dal vada",
+      "garelu",
+      "vada sambar",
+      "vada with sambar",
+      "medu vada sambar"
+    ],
+    "category": "breakfast",
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "andhra_pradesh",
+      "kerala"
+    ],
+    "base_calories_per_100g": 230,
+    "portions": {
+      "1 piece (~50g)": {
+        "grams": 50,
+        "calories": 135
+      },
+      "2 pieces (~100g)": {
+        "grams": 100,
+        "calories": 270
+      },
+      "3 pieces with sambar (~175g total)": {
+        "grams": 175,
+        "calories": 450
+      }
+    },
+    "preparations": {
+      "standard fried": {
+        "multiplier": 1.0,
+        "note": "Deep fried urad dal batter"
+      },
+      "with sambar + chutney": {
+        "multiplier": 1.4,
+        "note": "Accompaniments add 80-100 cal"
+      },
+      "dahi vada / curd vada": {
+        "multiplier": 1.3,
+        "note": "Soaked in curd with chutneys"
+      }
+    },
+    "fun_facts": [
+      "Each medu vada absorbs a surprising amount of oil during frying — about 15-20% of its weight.",
+      "Medu vada with sambar is often healthier than it looks because urad dal is high in protein.",
+      "The crispy outside and soft inside texture means the outer layer is where most oil (and calories) hide."
+    ],
+    "common_mistakes": [
+      "People undercount because they're small. 3 vadas with sambar = 450 cal — a full meal."
+    ],
+    "visual_references": [
+      "1 medu vada = roughly a small donut size = ~135 cal"
+    ],
+    "protein_per_100g": 8.5,
+    "carbs_per_100g": 21,
+    "fat_per_100g": 12,
+    "accompaniments": {
+      "sambar": {
+        "protein_g": 3.0,
+        "carbs_g": 11.3,
+        "fat_g": 1.5,
+        "grams": 150,
+        "default": false
+      },
+      "coconut_chutney": {
+        "protein_g": 0.5,
+        "carbs_g": 2.0,
+        "fat_g": 3.0,
+        "grams": 30,
+        "default": false
+      }
+    }
+  },
+  {
+    "canonical_name": "uttapam",
+    "display_name": "Uttapam",
+    "aliases": [
+      "uthappam",
+      "oothappam",
+      "thick dosa"
+    ],
+    "category": "breakfast",
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "kerala"
+    ],
+    "base_calories_per_100g": 185,
+    "portions": {
+      "1 small uttapam (~120g)": {
+        "grams": 120,
+        "calories": 185
+      },
+      "1 regular uttapam (~180g)": {
+        "grams": 180,
+        "calories": 280
+      },
+      "1 large restaurant (~220g)": {
+        "grams": 220,
+        "calories": 340
+      }
+    },
+    "preparations": {
+      "plain": {
+        "multiplier": 1.0,
+        "note": "Thick dosa with onion-tomato topping"
+      },
+      "onion uttapam": {
+        "multiplier": 1.05,
+        "note": "Minimal extra from onions"
+      },
+      "mixed vegetable": {
+        "multiplier": 1.1,
+        "note": "Extra veggies add minimal calories"
+      },
+      "cheese uttapam": {
+        "multiplier": 1.35,
+        "note": "Cheese adds significant calories"
+      }
+    },
+    "fun_facts": [
+      "Uttapam uses more oil than a regular dosa because it sits on the pan longer and is thicker.",
+      "Despite being thicker than a dosa, uttapam often has fewer calories because there is no potato filling."
+    ],
+    "common_mistakes": [
+      "Thicker than dosa so people assume double the calories, but it's only about 40-50% more."
+    ],
+    "visual_references": [
+      "1 regular uttapam = roughly a small plate = ~280 cal"
+    ],
+    "protein_per_100g": 4.5,
+    "carbs_per_100g": 27,
+    "fat_per_100g": 6,
+    "accompaniments": {
+      "sambar": {
+        "protein_g": 3.0,
+        "carbs_g": 11.3,
+        "fat_g": 1.5,
+        "grams": 150,
+        "default": false
+      },
+      "coconut_chutney": {
+        "protein_g": 0.5,
+        "carbs_g": 2.0,
+        "fat_g": 3.0,
+        "grams": 30,
+        "default": false
+      }
+    }
+  },
+  {
+    "canonical_name": "tandoori_chicken",
+    "display_name": "Tandoori Chicken",
+    "aliases": [
+      "tandoori murgh",
+      "clay oven chicken"
+    ],
+    "category": "protein",
+    "region": [
+      "punjab",
+      "north_india",
+      "all_india"
+    ],
+    "base_calories_per_100g": 170,
+    "portions": {
+      "1 leg piece (~120g with bone)": {
+        "grams": 120,
+        "calories": 180
+      },
+      "2 pieces (~240g)": {
+        "grams": 240,
+        "calories": 360
+      },
+      "half chicken (~350g with bone)": {
+        "grams": 350,
+        "calories": 520
+      }
+    },
+    "preparations": {
+      "standard tandoori": {
+        "multiplier": 1.0,
+        "note": "Yogurt-marinated, cooked in tandoor"
+      },
+      "with butter basting": {
+        "multiplier": 1.2,
+        "note": "Restaurant style with butter"
+      },
+      "malai tikka style": {
+        "multiplier": 1.3,
+        "note": "Cream-based marinade is richer"
+      }
+    },
+    "fun_facts": [
+      "Tandoori chicken is one of the best protein-to-calorie ratios in Indian food — about 25g protein per piece.",
+      "Switching from butter chicken to tandoori saves 150-200 calories per serving with more protein.",
+      "The red color comes from Kashmiri chili and food color, not from extra oil."
+    ],
+    "common_mistakes": [
+      "People overestimate because it looks rich, but tandoori is actually one of the leanest Indian preparations."
+    ],
+    "visual_references": [
+      "1 leg piece = ~180 cal with 22g protein — great macro ratio"
+    ],
+    "protein_per_100g": 26,
+    "carbs_per_100g": 3,
+    "fat_per_100g": 7
+  },
+  {
+    "canonical_name": "chicken_tikka",
+    "display_name": "Chicken Tikka",
+    "aliases": [
+      "tikka",
+      "boneless tandoori"
+    ],
+    "category": "protein",
+    "region": [
+      "punjab",
+      "north_india"
+    ],
+    "base_calories_per_100g": 175,
+    "portions": {
+      "6 pieces (~120g)": {
+        "grams": 120,
+        "calories": 200
+      },
+      "10 pieces (~200g)": {
+        "grams": 200,
+        "calories": 330
+      },
+      "restaurant starter plate (~150g)": {
+        "grams": 150,
+        "calories": 250
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Yogurt-marinated boneless pieces"
+      },
+      "malai tikka": {
+        "multiplier": 1.3,
+        "note": "Cream and cheese in marinade"
+      },
+      "achari tikka": {
+        "multiplier": 1.1,
+        "note": "Pickle-spiced, slightly more oil"
+      }
+    },
+    "fun_facts": [
+      "Chicken tikka is essentially high-protein, low-carb — ideal for anyone tracking macros.",
+      "6 pieces of tikka have more protein than a glass of whey shake, at similar calories."
+    ],
+    "common_mistakes": [
+      "Chicken tikka vs chicken tikka MASALA: tikka is 200 cal, tikka masala is 400+ cal. The gravy doubles it."
+    ],
+    "visual_references": [
+      "6 tikka pieces = roughly a fist = ~200 cal with 25g protein"
+    ],
+    "protein_per_100g": 25,
+    "carbs_per_100g": 3.5,
+    "fat_per_100g": 8
+  },
+  {
+    "canonical_name": "paneer_tikka",
+    "display_name": "Paneer Tikka",
+    "aliases": [
+      "grilled paneer",
+      "tandoori paneer"
+    ],
+    "category": "protein",
+    "region": [
+      "north_india",
+      "punjab"
+    ],
+    "base_calories_per_100g": 220,
+    "portions": {
+      "6 cubes (~100g)": {
+        "grams": 100,
+        "calories": 265
+      },
+      "10 cubes (~160g)": {
+        "grams": 160,
+        "calories": 425
+      },
+      "restaurant starter plate (~120g)": {
+        "grams": 120,
+        "calories": 320
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Yogurt-marinated, grilled"
+      },
+      "malai paneer tikka": {
+        "multiplier": 1.2,
+        "note": "Cream-based marinade"
+      },
+      "with mint chutney": {
+        "multiplier": 1.05,
+        "note": "Chutney adds minimal"
+      }
+    },
+    "fun_facts": [
+      "Paneer tikka has nearly 30% more calories than chicken tikka for the same weight.",
+      "Paneer is 265 cal per 100g vs chicken breast at 165 cal per 100g — vegetarian protein is calorie-expensive."
+    ],
+    "common_mistakes": [
+      "Assuming paneer tikka is 'lighter' because it's grilled. Paneer is inherently calorie-dense at 265/100g."
+    ],
+    "visual_references": [
+      "6 paneer cubes = roughly 100g = ~265 cal"
+    ],
+    "protein_per_100g": 13,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 16
+  },
+  {
+    "canonical_name": "egg_curry",
+    "display_name": "Egg Curry",
+    "aliases": [
+      "anda curry",
+      "egg masala",
+      "egg curry rice",
+      "anda curry chawal",
+      "egg curry with roti"
+    ],
+    "category": "curry",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 125,
+    "portions": {
+      "2 eggs in gravy (~200g)": {
+        "grams": 200,
+        "calories": 230
+      },
+      "2 eggs with rice (~400g combo)": {
+        "grams": 400,
+        "calories": 490
+      }
+    },
+    "preparations": {
+      "homemade": {
+        "multiplier": 1.0,
+        "note": "Onion-tomato gravy with eggs"
+      },
+      "dhaba style": {
+        "multiplier": 1.25,
+        "note": "More oil in the gravy"
+      },
+      "Kerala egg roast": {
+        "multiplier": 1.15,
+        "note": "Coconut oil base"
+      }
+    },
+    "fun_facts": [
+      "Egg curry is one of the most protein-efficient Indian curries — 2 eggs give you 12-14g protein.",
+      "A boiled egg is only 70 cal. The gravy adds about 90 cal. Together it is still a lean curry."
+    ],
+    "common_mistakes": [
+      "Egg curry is lighter than most people think. The eggs are lean and the gravy is typically not cream-based."
+    ],
+    "visual_references": [
+      "2-egg curry = ~230 cal — one of the lightest curries"
+    ],
+    "protein_per_100g": 7,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 8,
+    "accompaniments": {
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      },
+      "roti": {
+        "protein_g": 3.0,
+        "carbs_g": 17.6,
+        "fat_g": 1.4,
+        "grams": 40,
+        "default": false
+      }
+    }
+  },
+  {
+    "canonical_name": "fish_curry",
+    "display_name": "Fish Curry",
+    "aliases": [
+      "meen curry",
+      "machli curry",
+      "fish masala",
+      "fish curry rice",
+      "meen curry with rice"
+    ],
+    "category": "curry",
+    "region": [
+      "kerala",
+      "goa",
+      "bengal",
+      "coastal_india"
+    ],
+    "base_calories_per_100g": 70,
+    "portions": {
+      "1 piece with gravy (~200g)": {
+        "grams": 200,
+        "calories": 210
+      },
+      "2 pieces with gravy (~300g)": {
+        "grams": 300,
+        "calories": 315
+      }
+    },
+    "preparations": {
+      "light gravy (tomato/tamarind)": {
+        "multiplier": 1.0,
+        "note": "South Indian style"
+      },
+      "coconut milk curry": {
+        "multiplier": 1.3,
+        "note": "Coconut adds significant fat"
+      },
+      "fish fry + curry": {
+        "multiplier": 1.6,
+        "note": "Fried fish in curry is much richer"
+      }
+    },
+    "fun_facts": [
+      "Fish curry is one of the lowest calorie protein-rich Indian dishes.",
+      "Kerala-style fish curry with coconut is 30% more calories than a tamarind-based one."
+    ],
+    "common_mistakes": [
+      "Fish is lean but coconut-based curry adds significantly. Kerala fish curry is not the same as Goan fish curry in calories."
+    ],
+    "visual_references": [
+      "1 piece fish curry = ~210 cal — excellent protein-to-calorie ratio"
+    ],
+    "protein_per_100g": 4.5,
+    "carbs_per_100g": 6.8,
+    "fat_per_100g": 2.9,
+    "accompaniments": {
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      }
+    }
+  },
+  {
+    "canonical_name": "kadhi",
+    "display_name": "Kadhi (Yogurt Curry)",
+    "aliases": [
+      "kadhi pakora",
+      "dahi kadhi",
+      "kadi",
+      "kadhi chawal",
+      "kadhi_chawal",
+      "kadhi with rice"
+    ],
+    "category": "curry",
+    "region": [
+      "north_india",
+      "rajasthan",
+      "gujarat",
+      "punjab"
+    ],
+    "base_calories_per_100g": 75,
+    "portions": {
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 105
+      },
+      "1 bowl with pakoras (~250g)": {
+        "grams": 250,
+        "calories": 220
+      }
+    },
+    "preparations": {
+      "plain kadhi (no pakoras)": {
+        "multiplier": 1.0,
+        "note": "Just yogurt-besan gravy"
+      },
+      "kadhi pakora": {
+        "multiplier": 1.8,
+        "note": "Fried pakoras add major calories"
+      },
+      "Gujarati kadhi (sweeter)": {
+        "multiplier": 1.1,
+        "note": "Sugar adds some calories"
+      }
+    },
+    "fun_facts": [
+      "Plain kadhi without pakoras is one of the lowest calorie Indian curries at just 105 cal per katori.",
+      "The pakoras in kadhi pakora can double the calorie count. It is the fried bits, not the yogurt."
+    ],
+    "common_mistakes": [
+      "Kadhi without pakoras vs with pakoras is a 2x calorie difference. Always check which version."
+    ],
+    "visual_references": [
+      "1 katori plain kadhi = ~105 cal — great light curry option"
+    ],
+    "protein_per_100g": 2.5,
+    "carbs_per_100g": 7.5,
+    "fat_per_100g": 4,
+    "accompaniments": {
+      "rice": {
+        "protein_g": 5.4,
+        "carbs_g": 56.4,
+        "fat_g": 0.6,
+        "grams": 200,
+        "default": false
+      },
+      "pakora": {
+        "protein_g": 3.9,
+        "carbs_g": 16.8,
+        "fat_g": 9.6,
+        "grams": 60,
+        "default": false
+      }
+    }
+  },
+  {
+    "canonical_name": "khichdi",
+    "display_name": "Khichdi",
+    "aliases": [
+      "khichri",
+      "kichdi",
+      "dal rice"
+    ],
+    "category": "rice_dish",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 125,
+    "portions": {
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 175
+      },
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 290
+      },
+      "with ghee tadka (~250g)": {
+        "grams": 250,
+        "calories": 350
+      }
+    },
+    "preparations": {
+      "plain moong dal khichdi": {
+        "multiplier": 1.0,
+        "note": "Simple rice + dal + turmeric"
+      },
+      "with ghee tadka": {
+        "multiplier": 1.2,
+        "note": "Ghee tempering adds 50-60 cal"
+      },
+      "Gujarati khichdi (with ghee)": {
+        "multiplier": 1.3,
+        "note": "Generous ghee is traditional"
+      },
+      "masala khichdi": {
+        "multiplier": 1.15,
+        "note": "Veggies and spices add minimal"
+      }
+    },
+    "fun_facts": [
+      "Khichdi is considered a 'sick day food' but it is actually well-balanced — complete protein from rice + dal.",
+      "Plain khichdi is surprisingly moderate in calories. It is the ghee on top that changes everything."
+    ],
+    "common_mistakes": [
+      "Khichdi seems light but a plate with generous ghee hits 350 cal — the ghee is invisible but significant."
+    ],
+    "visual_references": [
+      "1 plate plain khichdi = ~290 cal; with ghee = ~350 cal"
+    ],
+    "protein_per_100g": 5,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 2.5
+  },
+  {
+    "canonical_name": "pulao",
+    "display_name": "Veg Pulao",
+    "aliases": [
+      "pilaf",
+      "vegetable rice",
+      "pulav",
+      "pilau"
+    ],
+    "category": "rice_dish",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 140,
+    "portions": {
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 220
+      },
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 365
+      }
+    },
+    "preparations": {
+      "vegetable pulao": {
+        "multiplier": 1.0,
+        "note": "Rice cooked with veggies and spices in oil"
+      },
+      "paneer pulao": {
+        "multiplier": 1.25,
+        "note": "Paneer adds calorie density"
+      },
+      "egg fried rice": {
+        "multiplier": 1.3,
+        "note": "More oil, egg adds protein and calories"
+      }
+    },
+    "fun_facts": [
+      "Pulao sits between plain rice and biryani in calories — more than steamed rice, less than biryani.",
+      "The oil used to cook the rice and temper spices adds about 40-60 cal over plain steamed rice."
+    ],
+    "common_mistakes": [
+      "People treat pulao as 'just rice' but the cooking oil makes it 40-50% more caloric than plain steamed rice."
+    ],
+    "visual_references": [
+      "1 plate pulao = ~365 cal vs plain rice at ~260 cal"
+    ],
+    "protein_per_100g": 3,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 4.5
+  },
+  {
+    "canonical_name": "bhel_puri",
+    "display_name": "Bhel Puri",
+    "aliases": [
+      "bhelpuri",
+      "jhaal muri",
+      "churumuri"
+    ],
+    "category": "street_food",
+    "region": [
+      "maharashtra",
+      "mumbai",
+      "all_india"
+    ],
+    "base_calories_per_100g": 200,
+    "portions": {
+      "1 small plate (~80g)": {
+        "grams": 80,
+        "calories": 145
+      },
+      "1 regular plate (~120g)": {
+        "grams": 120,
+        "calories": 215
+      },
+      "1 large plate (~160g)": {
+        "grams": 160,
+        "calories": 290
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Puffed rice, sev, chutneys, onion"
+      },
+      "with extra sev": {
+        "multiplier": 1.15,
+        "note": "Sev is fried, adds calories"
+      }
+    },
+    "fun_facts": [
+      "Bhel puri is actually one of the lighter street food options — puffed rice is very low density.",
+      "A plate of bhel puri has about half the calories of a plate of pani puri because less is deep fried."
+    ],
+    "common_mistakes": [
+      "Bhel puri is lighter than it looks. The puffed rice base is very low calorie — most calories come from sev and chutneys."
+    ],
+    "visual_references": [
+      "1 regular plate = ~215 cal — one of the lightest street food options"
+    ],
+    "protein_per_100g": 5,
+    "carbs_per_100g": 30,
+    "fat_per_100g": 7
+  },
+  {
+    "canonical_name": "kathi_roll",
+    "display_name": "Kathi Roll / Frankie",
+    "aliases": [
+      "frankie",
+      "egg roll",
+      "chicken roll",
+      "wrap"
+    ],
+    "category": "street_food",
+    "region": [
+      "kolkata",
+      "mumbai",
+      "all_india"
+    ],
+    "base_calories_per_100g": 190,
+    "portions": {
+      "1 egg roll (~180g)": {
+        "grams": 180,
+        "calories": 380
+      },
+      "1 chicken roll (~200g)": {
+        "grams": 200,
+        "calories": 420
+      },
+      "1 paneer roll (~200g)": {
+        "grams": 200,
+        "calories": 440
+      }
+    },
+    "preparations": {
+      "egg roll": {
+        "multiplier": 1.0,
+        "note": "Paratha + egg + onion + chutney"
+      },
+      "chicken tikka roll": {
+        "multiplier": 1.1,
+        "note": "More protein, slightly more cal"
+      },
+      "paneer roll": {
+        "multiplier": 1.15,
+        "note": "Paneer filling is calorie-dense"
+      },
+      "double egg roll": {
+        "multiplier": 1.2,
+        "note": "Extra egg layer"
+      }
+    },
+    "fun_facts": [
+      "A kathi roll is basically a paratha wrapped around a filling — the paratha alone is 200+ cal.",
+      "The roll wrapping is what makes it calorie-heavy. The filling is often the lighter part."
+    ],
+    "common_mistakes": [
+      "Kathi rolls seem like a light meal but the paratha wrap is 200+ cal before any filling."
+    ],
+    "visual_references": [
+      "1 chicken roll = ~420 cal — it is a full meal, not a snack"
+    ],
+    "protein_per_100g": 8.5,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 8
+  },
+  {
+    "canonical_name": "momos",
+    "display_name": "Momos",
+    "aliases": [
+      "dumpling",
+      "dim sum",
+      "steamed momos"
+    ],
+    "category": "street_food",
+    "region": [
+      "northeast_india",
+      "delhi",
+      "all_india"
+    ],
+    "base_calories_per_100g": 150,
+    "portions": {
+      "6 steamed momos (~150g)": {
+        "grams": 150,
+        "calories": 240
+      },
+      "6 fried momos (~150g)": {
+        "grams": 150,
+        "calories": 360
+      },
+      "8 steamed momos (~200g)": {
+        "grams": 200,
+        "calories": 320
+      }
+    },
+    "preparations": {
+      "steamed (veg)": {
+        "multiplier": 1.0,
+        "note": "Lightest version"
+      },
+      "steamed (chicken)": {
+        "multiplier": 1.1,
+        "note": "Slightly more from meat"
+      },
+      "fried": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.05,
+        "fat_multiplier": 3.0,
+        "note": "Frying adds fat, not much else"
+      },
+      "tandoori momos": {
+        "multiplier": 1.3,
+        "note": "Sauce and cooking method add calories"
+      },
+      "with mayo dip": {
+        "protein_multiplier": 1.0,
+        "carbs_multiplier": 1.0,
+        "fat_multiplier": 2.0,
+        "note": "Mayo is nearly pure fat"
+      }
+    },
+    "fun_facts": [
+      "Steamed momos are actually fairly reasonable at 40 cal each. It is when they are fried that calories jump 50%.",
+      "The mayo-based dipping sauce can add 100-150 cal to your plate without you noticing."
+    ],
+    "common_mistakes": [
+      "Fried momos vs steamed momos is a 50% calorie jump. And the mayo dip adds another 100-150 cal."
+    ],
+    "visual_references": [
+      "6 steamed momos = ~240 cal; 6 fried momos = ~360 cal"
+    ],
+    "protein_per_100g": 8,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 4,
+    "accompaniments": {
+      "mayo_dip": {
+        "protein_g": 0.2,
+        "carbs_g": 0.5,
+        "fat_g": 10.0,
+        "grams": 15,
+        "default": false
+      },
+      "red_chutney": {
+        "protein_g": 0.3,
+        "carbs_g": 2.0,
+        "fat_g": 0.5,
+        "grams": 20,
+        "default": false
+      }
+    }
+  },
+  {
+    "canonical_name": "pakora",
+    "display_name": "Pakora / Bhajiya",
+    "aliases": [
+      "bhajiya",
+      "bhajji",
+      "fritters",
+      "onion pakoda",
+      "pakoda"
+    ],
+    "category": "snack",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 270,
+    "portions": {
+      "5 pieces (~75g)": {
+        "grams": 75,
+        "calories": 180
+      },
+      "10 pieces (~150g)": {
+        "grams": 150,
+        "calories": 360
+      },
+      "1 plate restaurant (~120g)": {
+        "grams": 120,
+        "calories": 290
+      }
+    },
+    "preparations": {
+      "onion pakora": {
+        "multiplier": 1.0,
+        "note": "Standard deep fried besan batter"
+      },
+      "paneer pakora": {
+        "multiplier": 1.2,
+        "note": "Paneer adds calorie density"
+      },
+      "bread pakora": {
+        "multiplier": 1.15,
+        "note": "Bread soaks up oil"
+      },
+      "palak pakora": {
+        "multiplier": 0.9,
+        "note": "Spinach is lighter than onion"
+      }
+    },
+    "fun_facts": [
+      "Pakoras are basically vegetables dipped in batter and deep fried. The besan batter absorbs a LOT of oil.",
+      "A rainy day plate of chai + pakoras can easily be 400+ calories as a 'snack'."
+    ],
+    "common_mistakes": [
+      "They are small so you keep eating. 10 pakoras = 360 cal without even feeling full."
+    ],
+    "visual_references": [
+      "5 pakoras = roughly a handful = ~180 cal"
+    ],
+    "protein_per_100g": 6.5,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 16
+  },
+  {
+    "canonical_name": "kachori",
+    "display_name": "Kachori",
+    "aliases": [
+      "kachouri",
+      "khasta kachori",
+      "dal kachori"
+    ],
+    "category": "snack",
+    "region": [
+      "rajasthan",
+      "uttar_pradesh",
+      "north_india"
+    ],
+    "base_calories_per_100g": 330,
+    "portions": {
+      "1 small kachori (~50g)": {
+        "grams": 50,
+        "calories": 155
+      },
+      "1 regular kachori (~80g)": {
+        "grams": 80,
+        "calories": 250
+      },
+      "1 kachori with chole (~200g total)": {
+        "grams": 200,
+        "calories": 400
+      }
+    },
+    "preparations": {
+      "plain fried": {
+        "multiplier": 1.0,
+        "note": "Deep fried stuffed pastry"
+      },
+      "with aloo sabzi": {
+        "multiplier": 1.4,
+        "note": "Potato curry adds 100+ cal"
+      },
+      "raj kachori": {
+        "multiplier": 1.6,
+        "note": "Filled with chaat, curd, chutneys"
+      }
+    },
+    "fun_facts": [
+      "Kachori is even more calorie-dense than samosa per gram because the filling is usually dal or onion mixed with oil.",
+      "A breakfast of 2 kachoris with sabzi can be 600-700 calories."
+    ],
+    "common_mistakes": [
+      "Kachori looks similar to samosa but is often denser and higher calorie per piece."
+    ],
+    "visual_references": [
+      "1 regular kachori = ~250 cal — denser than a samosa"
+    ],
+    "protein_per_100g": 7,
+    "carbs_per_100g": 38,
+    "fat_per_100g": 17
+  },
+  {
+    "canonical_name": "aloo_tikki",
+    "display_name": "Aloo Tikki",
+    "aliases": [
+      "tikki",
+      "potato patty",
+      "cutlet"
+    ],
+    "category": "street_food",
+    "region": [
+      "north_india",
+      "delhi",
+      "uttar_pradesh"
+    ],
+    "base_calories_per_100g": 160,
+    "portions": {
+      "1 tikki (~60g)": {
+        "grams": 60,
+        "calories": 120
+      },
+      "2 tikkis (~120g)": {
+        "grams": 120,
+        "calories": 240
+      },
+      "aloo tikki chaat (~180g)": {
+        "grams": 180,
+        "calories": 350
+      }
+    },
+    "preparations": {
+      "shallow fried": {
+        "multiplier": 1.0,
+        "note": "Pan-fried potato patty"
+      },
+      "deep fried": {
+        "multiplier": 1.3,
+        "note": "More oil absorption"
+      },
+      "tikki chaat (with curd + chutneys)": {
+        "multiplier": 1.5,
+        "note": "Full chaat setup adds 100+ cal"
+      },
+      "tikki burger": {
+        "multiplier": 1.8,
+        "note": "Bun + sauces + tikki"
+      }
+    },
+    "fun_facts": [
+      "A plain aloo tikki is only about 120 cal. The chaat toppings can add 200+ more.",
+      "McDonalds McAloo Tikki is basically this concept with a bun — about 340 cal."
+    ],
+    "common_mistakes": [
+      "Plain tikki vs tikki chaat is a massive difference. The chutneys, curd, and sev add 150+ calories."
+    ],
+    "visual_references": [
+      "1 tikki = palm-sized patty = ~120 cal plain"
+    ],
+    "protein_per_100g": 3,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 6.5
+  },
+  {
+    "canonical_name": "rasgulla",
+    "display_name": "Rasgulla",
+    "aliases": [
+      "rosogolla",
+      "rasgola"
+    ],
+    "category": "dessert",
+    "region": [
+      "west_bengal",
+      "odisha",
+      "all_india"
+    ],
+    "base_calories_per_100g": 124,
+    "portions": {
+      "1 piece (~40g)": {
+        "grams": 40,
+        "calories": 75
+      },
+      "2 pieces (~80g)": {
+        "grams": 80,
+        "calories": 150
+      },
+      "3 pieces with syrup (~140g)": {
+        "grams": 140,
+        "calories": 260
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Chenna balls in sugar syrup"
+      },
+      "rasmalai": {
+        "multiplier": 1.5,
+        "note": "Flattened in sweetened milk — much richer"
+      }
+    },
+    "fun_facts": [
+      "Rasgulla is one of the lighter Indian sweets at just 75 cal per piece — about half of gulab jamun.",
+      "Unlike gulab jamun, rasgulla is NOT fried. It is boiled in sugar syrup, which makes it significantly lighter."
+    ],
+    "common_mistakes": [
+      "People lump all Indian sweets together. Rasgulla is 75 cal vs gulab jamun at 130 cal — almost half."
+    ],
+    "visual_references": [
+      "1 rasgulla = spongy golf ball = ~75 cal"
+    ],
+    "protein_per_100g": 2.7,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 2.7
+  },
+  {
+    "canonical_name": "ladoo",
+    "display_name": "Ladoo",
+    "aliases": [
+      "laddoo",
+      "laddu",
+      "besan ladoo",
+      "motichur ladoo"
+    ],
+    "category": "dessert",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 480,
+    "portions": {
+      "1 small ladoo (~30g)": {
+        "grams": 30,
+        "calories": 120
+      },
+      "1 medium ladoo (~50g)": {
+        "grams": 50,
+        "calories": 200
+      },
+      "1 large ladoo (~70g)": {
+        "grams": 70,
+        "calories": 280
+      }
+    },
+    "preparations": {
+      "besan ladoo": {
+        "multiplier": 1.0,
+        "note": "Chickpea flour + ghee + sugar"
+      },
+      "motichur ladoo": {
+        "multiplier": 0.9,
+        "note": "Slightly lighter than besan"
+      },
+      "boondi ladoo": {
+        "multiplier": 0.95,
+        "note": "Similar to motichur"
+      },
+      "rava ladoo": {
+        "multiplier": 1.05,
+        "note": "Semolina base with coconut"
+      }
+    },
+    "fun_facts": [
+      "Ladoos are calorie bombs because they are made of ghee + sugar + flour — the three most calorie-dense ingredients.",
+      "One medium besan ladoo has the same calories as 2 rotis."
+    ],
+    "common_mistakes": [
+      "They are small and round so you pop one casually. But 1 medium ladoo = 200 cal = 2 rotis."
+    ],
+    "visual_references": [
+      "1 medium ladoo = slightly larger than a golf ball = ~200 cal"
+    ],
+    "protein_per_100g": 10,
+    "carbs_per_100g": 53,
+    "fat_per_100g": 25
+  },
+  {
+    "canonical_name": "kheer",
+    "display_name": "Kheer / Payasam",
+    "aliases": [
+      "payasam",
+      "rice pudding",
+      "phirni"
+    ],
+    "category": "dessert",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 160,
+    "portions": {
+      "1 small bowl (~100g)": {
+        "grams": 100,
+        "calories": 140
+      },
+      "1 regular bowl (~180g)": {
+        "grams": 180,
+        "calories": 250
+      },
+      "1 large bowl (~250g)": {
+        "grams": 250,
+        "calories": 350
+      }
+    },
+    "preparations": {
+      "rice kheer": {
+        "multiplier": 1.0,
+        "note": "Reduced milk + rice + sugar"
+      },
+      "seviyan kheer (vermicelli)": {
+        "multiplier": 1.1,
+        "note": "Roasted vermicelli adds slightly more"
+      },
+      "dry fruit kheer": {
+        "multiplier": 1.25,
+        "note": "Nuts add calorie density"
+      }
+    },
+    "fun_facts": [
+      "Kheer gets most of its calories from the reduced milk (rabri base) and sugar, not the rice.",
+      "A small bowl of kheer after a meal adds 140 calories — the same as an extra roti."
+    ],
+    "common_mistakes": [
+      "Kheer seems liquid and light, but reduced milk is calorie-dense. A regular bowl = 250 cal."
+    ],
+    "visual_references": [
+      "1 regular bowl = ~250 cal — treat it as a calorie-dense addition"
+    ],
+    "protein_per_100g": 4,
+    "carbs_per_100g": 24,
+    "fat_per_100g": 5
+  },
+  {
+    "canonical_name": "filter_coffee",
+    "display_name": "Filter Coffee (South Indian)",
+    "aliases": [
+      "kaapi",
+      "degree coffee",
+      "south Indian coffee"
+    ],
+    "category": "beverage",
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "kerala"
+    ],
+    "base_calories_per_100g": 55,
+    "portions": {
+      "1 small tumbler (~100ml)": {
+        "grams": 100,
+        "calories": 45
+      },
+      "1 regular tumbler (~150ml)": {
+        "grams": 150,
+        "calories": 70
+      },
+      "1 large cup (~200ml)": {
+        "grams": 200,
+        "calories": 90
+      }
+    },
+    "preparations": {
+      "traditional (milk + sugar)": {
+        "multiplier": 1.0,
+        "note": "Decoction + boiled milk + sugar"
+      },
+      "without sugar": {
+        "multiplier": 0.65,
+        "note": "Sugar accounts for ~35% of calories"
+      },
+      "black coffee": {
+        "multiplier": 0.05,
+        "note": "Almost zero calories"
+      }
+    },
+    "fun_facts": [
+      "Filter coffee is slightly higher calorie than chai because it typically uses more milk.",
+      "3 filter coffees a day = 200+ invisible calories, similar to chai."
+    ],
+    "common_mistakes": [
+      "Like chai, people forget to count coffee calories. 3 per day = 200+ cal from beverages alone."
+    ],
+    "visual_references": [
+      "1 tumbler = ~70 cal — similar to chai"
+    ],
+    "protein_per_100g": 1.5,
+    "carbs_per_100g": 6,
+    "fat_per_100g": 2.3
+  },
+  {
+    "canonical_name": "coconut_water",
+    "display_name": "Coconut Water (Nariyal Pani)",
+    "aliases": [
+      "nariyal pani",
+      "tender coconut",
+      "daab"
+    ],
+    "category": "beverage",
+    "region": [
+      "all_india",
+      "coastal_india"
+    ],
+    "base_calories_per_100g": 19,
+    "portions": {
+      "1 tender coconut (~300ml)": {
+        "grams": 300,
+        "calories": 57
+      },
+      "1 large coconut (~500ml)": {
+        "grams": 500,
+        "calories": 95
+      },
+      "with malai (~400ml + flesh)": {
+        "grams": 400,
+        "calories": 180
+      }
+    },
+    "preparations": {
+      "water only": {
+        "multiplier": 1.0,
+        "note": "Just the water"
+      },
+      "with malai (coconut flesh)": {
+        "multiplier": 3.0,
+        "note": "The flesh is very calorie dense"
+      }
+    },
+    "fun_facts": [
+      "Coconut water is one of the lowest calorie natural beverages at just 57 cal per tender coconut.",
+      "The malai (flesh) is where all the calories hide — it can triple the calorie count."
+    ],
+    "common_mistakes": [
+      "Coconut water = 57 cal. Coconut water with all the malai = 180 cal. Big difference."
+    ],
+    "visual_references": [
+      "1 tender coconut water = ~57 cal — very light"
+    ],
+    "protein_per_100g": 0.7,
+    "carbs_per_100g": 3.7,
+    "fat_per_100g": 0.2
+  },
+  {
+    "canonical_name": "buttermilk",
+    "display_name": "Buttermilk (Chaas)",
+    "aliases": [
+      "chaas",
+      "mattha",
+      "majjiga",
+      "mor"
+    ],
+    "category": "beverage",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 30,
+    "portions": {
+      "1 glass (~250ml)": {
+        "grams": 250,
+        "calories": 50
+      },
+      "1 large glass (~400ml)": {
+        "grams": 400,
+        "calories": 80
+      }
+    },
+    "preparations": {
+      "plain salted": {
+        "multiplier": 1.0,
+        "note": "Diluted curd with salt and spices"
+      },
+      "masala chaas": {
+        "multiplier": 1.1,
+        "note": "Cumin, ginger adds minimal"
+      }
+    },
+    "fun_facts": [
+      "Buttermilk is the lowest calorie Indian beverage choice at just 50 cal per glass.",
+      "Chaas vs sweet lassi: 50 cal vs 175 cal — same base ingredient, very different calorie load."
+    ],
+    "common_mistakes": [
+      "People confuse chaas with lassi. Chaas is diluted and salted (50 cal), lassi is concentrated and sweetened (175 cal)."
+    ],
+    "visual_references": [
+      "1 glass chaas = ~50 cal — the lightest Indian beverage"
+    ],
+    "protein_per_100g": 1.5,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 1.5
+  },
+  {
+    "canonical_name": "bhatura",
+    "display_name": "Bhatura",
+    "aliases": [
+      "bhatoora",
+      "chole bhature bread"
+    ],
+    "category": "staple",
+    "region": [
+      "north_india",
+      "punjab",
+      "delhi"
+    ],
+    "base_calories_per_100g": 315,
+    "portions": {
+      "1 regular bhatura (~80g)": {
+        "grams": 80,
+        "calories": 256
+      },
+      "1 large bhatura (~110g)": {
+        "grams": 110,
+        "calories": 350
+      }
+    },
+    "preparations": {
+      "standard deep fried": {
+        "multiplier": 1.0,
+        "note": "Deep fried maida dough"
+      },
+      "mini bhatura": {
+        "multiplier": 0.6,
+        "note": "Smaller portion"
+      }
+    },
+    "fun_facts": [
+      "One bhatura alone has about the same calories as 2.5 rotis.",
+      "Bhatura is made from maida (refined flour) and deep fried — the worst combination for calorie density."
+    ],
+    "common_mistakes": [
+      "In chole bhature, people blame the chole. But the bhatura is 256 cal, the chole is only 180 cal."
+    ],
+    "visual_references": [
+      "1 bhatura = large puffed balloon = ~256 cal"
+    ],
+    "protein_per_100g": 5.5,
+    "carbs_per_100g": 42,
+    "fat_per_100g": 14
+  },
+  {
+    "canonical_name": "poori",
+    "display_name": "Poori",
+    "aliases": [
+      "puri",
+      "luchi"
+    ],
+    "category": "staple",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 296,
+    "portions": {
+      "1 small poori (~25g)": {
+        "grams": 25,
+        "calories": 73
+      },
+      "2 pooris (~50g)": {
+        "grams": 50,
+        "calories": 145
+      },
+      "4 pooris (~100g)": {
+        "grams": 100,
+        "calories": 290
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Deep fried wheat dough"
+      },
+      "with aloo sabzi": {
+        "multiplier": 1.5,
+        "note": "Potato curry adds 100-150 cal"
+      }
+    },
+    "fun_facts": [
+      "Each poori is small but at 73 cal each, eating 4-5 pooris (common) = 300-365 cal just from bread.",
+      "Poori vs roti: poori is deep fried so each piece has 1.5x the calories of a similar-sized roti."
+    ],
+    "common_mistakes": [
+      "They are small so you eat many. 5 pooris = 365 cal. Most people eat 4-6 without thinking."
+    ],
+    "visual_references": [
+      "1 poori = small puffed disc = ~73 cal each"
+    ],
+    "protein_per_100g": 5,
+    "carbs_per_100g": 34,
+    "fat_per_100g": 15.5
+  },
+  {
+    "canonical_name": "dal_rice",
+    "display_name": "Dal Chawal (Dal + Rice combo)",
+    "aliases": [
+      "dal chawal",
+      "dal rice",
+      "daal chawal"
+    ],
+    "category": "rice_dish",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 150,
+    "portions": {
+      "1 katori dal + 1 katori rice (~300g)": {
+        "grams": 300,
+        "calories": 370
+      },
+      "full plate (generous)": {
+        "grams": 450,
+        "calories": 530
+      }
+    },
+    "preparations": {
+      "plain dal + steamed rice": {
+        "multiplier": 1.0,
+        "note": "Simple home meal"
+      },
+      "tadka dal + rice": {
+        "multiplier": 1.15,
+        "note": "Tempering adds 40-50 cal"
+      },
+      "dal fry + jeera rice": {
+        "multiplier": 1.3,
+        "note": "Both components have extra fat"
+      }
+    },
+    "fun_facts": [
+      "Dal chawal is a complete protein meal — rice + lentils together provide all essential amino acids.",
+      "A simple dal chawal is about 370 cal — one of the most balanced and moderate Indian meals."
+    ],
+    "common_mistakes": [
+      "Dal chawal is moderate but people often underestimate the rice portion. Most serve 200g+ rice."
+    ],
+    "visual_references": [
+      "Standard dal chawal = ~370 cal — benchmark for a moderate Indian meal"
+    ],
+    "protein_per_100g": 5,
+    "carbs_per_100g": 24,
+    "fat_per_100g": 3.5
+  },
+  {
+    "canonical_name": "boiled_egg",
+    "display_name": "Boiled Egg",
+    "aliases": [
+      "anda",
+      "hard boiled egg",
+      "egg"
+    ],
+    "category": "protein",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 155,
+    "portions": {
+      "1 egg (~50g)": {
+        "grams": 50,
+        "calories": 70
+      },
+      "2 eggs (~100g)": {
+        "grams": 100,
+        "calories": 140
+      },
+      "3 eggs (~150g)": {
+        "grams": 150,
+        "calories": 210
+      }
+    },
+    "preparations": {
+      "boiled": {
+        "multiplier": 1.0,
+        "note": "No added fat"
+      },
+      "omelette (with oil)": {
+        "multiplier": 1.4,
+        "note": "Oil adds 30-40 cal per egg"
+      },
+      "fried egg": {
+        "multiplier": 1.3,
+        "note": "Oil for frying"
+      }
+    },
+    "fun_facts": [
+      "A boiled egg is 70 cal with 6g protein — one of the best protein-per-calorie foods available.",
+      "Boiled vs fried: 70 cal vs 100 cal per egg. The cooking method adds 30+ calories."
+    ],
+    "common_mistakes": [
+      "Boiled egg = 70 cal. Fried egg = 100 cal. Omelette with oil = 100 cal. Method matters."
+    ],
+    "visual_references": [
+      "1 boiled egg = ~70 cal / 6g protein — your protein calibration anchor"
+    ],
+    "protein_per_100g": 12.6,
+    "carbs_per_100g": 1.1,
+    "fat_per_100g": 10.6
+  },
+  {
+    "canonical_name": "curd_rice",
+    "display_name": "Curd Rice (Thayir Sadam)",
+    "aliases": [
+      "thayir sadam",
+      "dahi chawal",
+      "mosaranna"
+    ],
+    "category": "rice_dish",
+    "region": [
+      "south_india",
+      "tamil_nadu",
+      "karnataka"
+    ],
+    "base_calories_per_100g": 130,
+    "portions": {
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 165
+      },
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 275
+      }
+    },
+    "preparations": {
+      "plain": {
+        "multiplier": 1.0,
+        "note": "Rice mixed with curd, salt"
+      },
+      "with tempering": {
+        "multiplier": 1.15,
+        "note": "Mustard, curry leaf tadka adds some"
+      },
+      "with pomegranate/grapes": {
+        "multiplier": 1.1,
+        "note": "Fruit adds minimal"
+      }
+    },
+    "fun_facts": [
+      "Curd rice is one of the lightest rice preparations because the curd dilutes the calorie density.",
+      "South Indians often eat curd rice as the last course. At 165 cal per katori, it is a sensible way to end a meal."
+    ],
+    "common_mistakes": [
+      "Curd rice feels heavy but is actually lighter than most rice dishes because curd replaces oil/ghee."
+    ],
+    "visual_references": [
+      "1 katori curd rice = ~165 cal — lighter than you think"
+    ],
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 19,
+    "fat_per_100g": 4
+  },
+  {
+    "canonical_name": "rasam",
+    "display_name": "Rasam",
+    "aliases": [
+      "chaaru",
+      "saaru",
+      "pepper water"
+    ],
+    "category": "curry",
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "andhra_pradesh",
+      "kerala"
+    ],
+    "base_calories_per_100g": 28,
+    "protein_per_100g": 1.0,
+    "carbs_per_100g": 5.0,
+    "fat_per_100g": 0.5,
+    "portions": {
+      "1 katori (~150ml)": {
+        "grams": 150,
+        "calories": 42
+      },
+      "1 bowl (~250ml)": {
+        "grams": 250,
+        "calories": 70
+      }
+    },
+    "preparations": {
+      "tomato rasam": {
+        "multiplier": 1.0,
+        "note": "Standard tamarind-tomato-pepper"
+      },
+      "pepper rasam": {
+        "multiplier": 0.9,
+        "note": "Slightly lighter, no tomato base"
+      },
+      "lemon rasam": {
+        "multiplier": 0.95,
+        "note": "Lemon replaces tamarind"
+      }
+    },
+    "fun_facts": [
+      "Rasam is one of the lowest calorie Indian dishes at just 28 cal/100g — almost like flavored water.",
+      "A full bowl of rasam has fewer calories than a single idli."
+    ],
+    "common_mistakes": [
+      "Rasam is basically negligible calories. The rice you eat it with is where the calories are."
+    ],
+    "visual_references": [
+      "1 bowl rasam = ~70 cal — the lightest curry you can eat"
+    ]
+  },
+  {
+    "canonical_name": "sambar",
+    "display_name": "Sambar",
+    "aliases": [
+      "sambhar",
+      "sambaar"
+    ],
+    "category": "curry",
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "andhra_pradesh",
+      "kerala"
+    ],
+    "base_calories_per_100g": 50,
+    "protein_per_100g": 2.0,
+    "carbs_per_100g": 7.5,
+    "fat_per_100g": 1.0,
+    "portions": {
+      "1 katori (~150ml)": {
+        "grams": 150,
+        "calories": 75
+      },
+      "1 bowl (~250ml)": {
+        "grams": 250,
+        "calories": 125
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Dal + vegetables + tamarind"
+      },
+      "restaurant style": {
+        "multiplier": 1.3,
+        "note": "More oil in tempering"
+      }
+    },
+    "fun_facts": [
+      "Sambar is a complete nutritional package — lentils for protein, vegetables for fiber, at just 50 cal/100g.",
+      "The vegetables in sambar (drumstick, okra, gourd) are almost zero-calorie themselves."
+    ],
+    "common_mistakes": [
+      "Sambar itself is light. But people pour it over a mountain of rice and blame the sambar."
+    ],
+    "visual_references": [
+      "1 katori sambar = ~75 cal with decent protein from dal"
+    ]
+  },
+  {
+    "canonical_name": "avial",
+    "display_name": "Avial",
+    "aliases": [
+      "aviyal"
+    ],
+    "category": "curry",
+    "region": [
+      "kerala",
+      "tamil_nadu",
+      "karnataka"
+    ],
+    "base_calories_per_100g": 60,
+    "protein_per_100g": 2.0,
+    "carbs_per_100g": 4.5,
+    "fat_per_100g": 4.0,
+    "portions": {
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 90
+      },
+      "1 bowl (~250g)": {
+        "grams": 250,
+        "calories": 150
+      }
+    },
+    "preparations": {
+      "standard (coconut + curd)": {
+        "multiplier": 1.0,
+        "note": "Mixed veggies in coconut-curd sauce"
+      },
+      "without coconut": {
+        "multiplier": 0.7,
+        "note": "Much lighter without coconut"
+      }
+    },
+    "fun_facts": [
+      "Avial gets most of its calories from coconut, not the vegetables.",
+      "A katori of avial has about the same calories as one idli."
+    ],
+    "common_mistakes": [
+      "It looks like a vegetable dish but coconut paste makes it richer than it appears."
+    ],
+    "visual_references": [
+      "1 katori = ~90 cal — moderate for a veggie dish due to coconut"
+    ]
+  },
+  {
+    "canonical_name": "appam",
+    "display_name": "Appam",
+    "aliases": [
+      "palappam",
+      "hoppers"
+    ],
+    "category": "breakfast",
+    "region": [
+      "kerala",
+      "tamil_nadu"
+    ],
+    "base_calories_per_100g": 184,
+    "protein_per_100g": 2.5,
+    "carbs_per_100g": 25.0,
+    "fat_per_100g": 7.5,
+    "portions": {
+      "1 piece (~60g)": {
+        "grams": 60,
+        "calories": 110
+      },
+      "2 pieces (~120g)": {
+        "grams": 120,
+        "calories": 220
+      }
+    },
+    "preparations": {
+      "plain appam": {
+        "multiplier": 1.0,
+        "note": "Fermented rice batter, bowl-shaped"
+      },
+      "egg appam": {
+        "multiplier": 1.4,
+        "note": "Egg cracked into the center"
+      },
+      "with stew": {
+        "multiplier": 1.0,
+        "note": "Stew is separate, ~80 cal per katori"
+      }
+    },
+    "fun_facts": [
+      "Appam is lacy and thin at the edges but thick in the center — the center is where most calories concentrate.",
+      "The fermentation in appam batter actually improves nutrient absorption."
+    ],
+    "common_mistakes": [
+      "One appam looks small but at 110 cal each, 3 appams + stew = 450+ cal."
+    ],
+    "visual_references": [
+      "1 appam = bowl-shaped pancake = ~110 cal"
+    ],
+    "accompaniments": {
+      "veg_stew": {
+        "protein_g": 2.0,
+        "carbs_g": 5.0,
+        "fat_g": 4.0,
+        "grams": 100,
+        "default": false
+      },
+      "egg_curry": {
+        "protein_g": 7.0,
+        "carbs_g": 5.0,
+        "fat_g": 8.0,
+        "grams": 100,
+        "default": false
+      }
+    }
+  },
+  {
+    "canonical_name": "puttu",
+    "display_name": "Puttu",
+    "aliases": [
+      "pittu"
+    ],
+    "category": "breakfast",
+    "region": [
+      "kerala",
+      "tamil_nadu"
+    ],
+    "base_calories_per_100g": 230,
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 38.0,
+    "fat_per_100g": 6.5,
+    "portions": {
+      "1 cylinder (~150g)": {
+        "grams": 150,
+        "calories": 345
+      },
+      "half cylinder (~75g)": {
+        "grams": 75,
+        "calories": 173
+      }
+    },
+    "preparations": {
+      "rice puttu with coconut": {
+        "multiplier": 1.0,
+        "note": "Steamed rice flour + coconut layers"
+      },
+      "wheat puttu": {
+        "multiplier": 0.95,
+        "note": "Slightly different texture"
+      },
+      "ragi puttu": {
+        "multiplier": 0.9,
+        "note": "Finger millet base, slightly lower cal"
+      }
+    },
+    "fun_facts": [
+      "One full puttu cylinder can be 345 calories — almost as much as a plate of rice.",
+      "The coconut layers in puttu contribute most of the fat content."
+    ],
+    "common_mistakes": [
+      "Puttu with banana and sugar for breakfast can be 500+ calories before you leave the house."
+    ],
+    "visual_references": [
+      "1 puttu cylinder = ~345 cal — surprisingly calorie-dense"
+    ]
+  },
+  {
+    "canonical_name": "ven_pongal",
+    "display_name": "Ven Pongal",
+    "aliases": [
+      "pongal",
+      "khara pongal"
+    ],
+    "category": "breakfast",
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "andhra_pradesh"
+    ],
+    "base_calories_per_100g": 130,
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 18.0,
+    "fat_per_100g": 4.5,
+    "portions": {
+      "1 katori (~150g)": {
+        "grams": 150,
+        "calories": 195
+      },
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 325
+      }
+    },
+    "preparations": {
+      "standard (ghee + pepper + cashew)": {
+        "multiplier": 1.0,
+        "note": "Rice-dal porridge with ghee tempering"
+      },
+      "restaurant style (extra ghee)": {
+        "multiplier": 1.3,
+        "note": "Generous ghee and cashews"
+      }
+    },
+    "fun_facts": [
+      "Pongal is essentially rice-dal khichdi's South Indian cousin — similar calories but with more ghee.",
+      "The cashews and ghee in pongal contribute 30-40% of its total calories."
+    ],
+    "common_mistakes": [
+      "Pongal looks like a simple porridge but the ghee makes it 30% more caloric than plain khichdi."
+    ],
+    "visual_references": [
+      "1 plate pongal = ~325 cal — heavier than it looks"
+    ]
+  },
+  {
+    "canonical_name": "veg_manchurian",
+    "display_name": "Veg Manchurian (Dry)",
+    "aliases": [
+      "gobi manchurian",
+      "manchurian dry"
+    ],
+    "category": "street_food",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 175,
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 18.0,
+    "fat_per_100g": 9.0,
+    "portions": {
+      "1 plate (~150g)": {
+        "grams": 150,
+        "calories": 263
+      },
+      "with fried rice (~350g combo)": {
+        "grams": 350,
+        "calories": 600
+      }
+    },
+    "preparations": {
+      "dry": {
+        "multiplier": 1.0,
+        "note": "Deep fried balls with sauce coating"
+      },
+      "gravy": {
+        "multiplier": 0.85,
+        "note": "Gravy adds water, dilutes per-100g density"
+      }
+    },
+    "fun_facts": [
+      "Veg Manchurian is essentially deep-fried vegetable balls — the 'Chinese' tag makes people forget it is fried.",
+      "A Manchurian + fried rice combo can hit 600 calories easily."
+    ],
+    "common_mistakes": [
+      "Manchurian + fried rice is treated as one dish but it is really two calorie-heavy items together."
+    ],
+    "visual_references": [
+      "1 plate dry manchurian = ~263 cal — mostly from deep frying"
+    ]
+  },
+  {
+    "canonical_name": "veg_fried_rice",
+    "display_name": "Veg Fried Rice",
+    "aliases": [
+      "chinese fried rice",
+      "schezwan fried rice"
+    ],
+    "category": "rice_dish",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 172,
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 25.0,
+    "fat_per_100g": 6.0,
+    "portions": {
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 430
+      },
+      "half plate (~150g)": {
+        "grams": 150,
+        "calories": 258
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Rice stir-fried with veggies and soy sauce"
+      },
+      "schezwan": {
+        "multiplier": 1.1,
+        "note": "Extra oil in schezwan sauce"
+      },
+      "egg fried rice": {
+        "multiplier": 1.15,
+        "note": "Egg adds protein and some fat"
+      }
+    },
+    "fun_facts": [
+      "Fried rice has 30% more calories than steamed rice per 100g — all from the cooking oil.",
+      "A full plate of fried rice (250g) = 430 cal, vs steamed rice at 325 cal for the same amount."
+    ],
+    "common_mistakes": [
+      "People think 'just rice with vegetables' but the frying oil adds 100+ calories per plate."
+    ],
+    "visual_references": [
+      "1 plate fried rice = ~430 cal vs steamed rice plate ~325 cal"
+    ]
+  },
+  {
+    "canonical_name": "chilli_chicken",
+    "display_name": "Chilli Chicken",
+    "aliases": [
+      "dry chilli chicken",
+      "chicken chilli"
+    ],
+    "category": "protein",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 195,
+    "protein_per_100g": 16.0,
+    "carbs_per_100g": 9.0,
+    "fat_per_100g": 10.0,
+    "portions": {
+      "1 plate dry (~150g)": {
+        "grams": 150,
+        "calories": 293
+      },
+      "gravy version (~200g)": {
+        "grams": 200,
+        "calories": 350
+      }
+    },
+    "preparations": {
+      "dry": {
+        "multiplier": 1.0,
+        "note": "Battered fried chicken with peppers and sauce"
+      },
+      "gravy": {
+        "multiplier": 0.9,
+        "note": "Sauce dilutes slightly"
+      }
+    },
+    "fun_facts": [
+      "Chilli chicken has decent protein (16g/100g) but the batter and frying add significant fat.",
+      "Dry chilli chicken vs tandoori chicken: same protein, but chilli chicken has 3x the fat."
+    ],
+    "common_mistakes": [
+      "It is chicken so it must be healthy — but the batter coating and deep frying change everything."
+    ],
+    "visual_references": [
+      "1 plate dry chilli chicken = ~293 cal with 24g protein"
+    ]
+  },
+  {
+    "canonical_name": "hakka_noodles",
+    "display_name": "Hakka Noodles",
+    "aliases": [
+      "chow mein",
+      "veg noodles",
+      "chinese noodles"
+    ],
+    "category": "street_food",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 130,
+    "protein_per_100g": 3.0,
+    "carbs_per_100g": 20.0,
+    "fat_per_100g": 4.0,
+    "portions": {
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 325
+      },
+      "half plate (~150g)": {
+        "grams": 150,
+        "calories": 195
+      }
+    },
+    "preparations": {
+      "veg": {
+        "multiplier": 1.0,
+        "note": "Stir-fried noodles with vegetables"
+      },
+      "chicken": {
+        "multiplier": 1.15,
+        "note": "Chicken adds protein and calories"
+      },
+      "schezwan": {
+        "multiplier": 1.1,
+        "note": "Extra oil in sauce"
+      }
+    },
+    "fun_facts": [
+      "Hakka noodles are lighter than fried rice per 100g because noodles absorb less oil.",
+      "A plate of noodles is about the same calories as a plate of biryani."
+    ],
+    "common_mistakes": [
+      "Noodles seem lighter than rice but a full plate is still 325 cal."
+    ],
+    "visual_references": [
+      "1 plate hakka noodles = ~325 cal"
+    ]
+  },
+  {
+    "canonical_name": "pizza",
+    "display_name": "Pizza (Cheese/Veg)",
+    "aliases": [
+      "pizza slice",
+      "cheese pizza"
+    ],
+    "category": "international",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 266,
+    "protein_per_100g": 11.0,
+    "carbs_per_100g": 30.0,
+    "fat_per_100g": 10.0,
+    "portions": {
+      "1 slice (~107g)": {
+        "grams": 107,
+        "calories": 285
+      },
+      "2 slices (~214g)": {
+        "grams": 214,
+        "calories": 570
+      },
+      "1 medium pizza (~600g)": {
+        "grams": 600,
+        "calories": 1600
+      }
+    },
+    "preparations": {
+      "cheese/margherita": {
+        "multiplier": 1.0,
+        "note": "Basic cheese pizza"
+      },
+      "loaded/supreme": {
+        "multiplier": 1.2,
+        "note": "Extra toppings and cheese"
+      },
+      "thin crust": {
+        "multiplier": 0.85,
+        "note": "Less dough = fewer carb calories"
+      }
+    },
+    "fun_facts": [
+      "Two pizza slices (570 cal) equals roughly a butter chicken + naan meal.",
+      "Thin crust saves about 15% calories vs regular crust — the dough is the biggest calorie contributor."
+    ],
+    "common_mistakes": [
+      "People eat 3-4 slices thinking it is one meal. That is 850-1140 cal."
+    ],
+    "visual_references": [
+      "1 pizza slice = ~285 cal — about the same as a vada pav"
+    ]
+  },
+  {
+    "canonical_name": "burger",
+    "display_name": "Burger (Veg/Chicken)",
+    "aliases": [
+      "hamburger",
+      "chicken burger",
+      "veg burger"
+    ],
+    "category": "international",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 240,
+    "protein_per_100g": 13.0,
+    "carbs_per_100g": 20.0,
+    "fat_per_100g": 12.0,
+    "portions": {
+      "1 regular burger (~180g)": {
+        "grams": 180,
+        "calories": 430
+      },
+      "1 large burger (~250g)": {
+        "grams": 250,
+        "calories": 600
+      }
+    },
+    "preparations": {
+      "basic (single patty)": {
+        "multiplier": 1.0,
+        "note": "Bun + patty + basic toppings"
+      },
+      "double patty": {
+        "multiplier": 1.5,
+        "note": "Extra patty nearly doubles the filling"
+      },
+      "with cheese + mayo": {
+        "multiplier": 1.25,
+        "note": "Cheese and sauces add 100+ cal"
+      }
+    },
+    "fun_facts": [
+      "A basic burger has almost the same calories as a vada pav per 100g.",
+      "The bun alone contributes about 150 calories to a standard burger."
+    ],
+    "common_mistakes": [
+      "Adding cheese and mayo can push a 430 cal burger to 600+ cal. The add-ons are not free."
+    ],
+    "visual_references": [
+      "1 regular burger = ~430 cal — similar to chole bhature"
+    ]
+  },
+  {
+    "canonical_name": "pasta",
+    "display_name": "Pasta (with Tomato Sauce)",
+    "aliases": [
+      "spaghetti",
+      "penne",
+      "macaroni"
+    ],
+    "category": "international",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 140,
+    "protein_per_100g": 5.0,
+    "carbs_per_100g": 22.0,
+    "fat_per_100g": 3.5,
+    "portions": {
+      "1 plate (~250g)": {
+        "grams": 250,
+        "calories": 350
+      },
+      "large plate (~350g)": {
+        "grams": 350,
+        "calories": 490
+      }
+    },
+    "preparations": {
+      "tomato/marinara": {
+        "multiplier": 1.0,
+        "note": "Basic tomato-based sauce"
+      },
+      "white/alfredo": {
+        "multiplier": 1.6,
+        "note": "Cream sauce nearly doubles the fat"
+      },
+      "pesto": {
+        "multiplier": 1.3,
+        "note": "Oil and nuts in pesto add calories"
+      }
+    },
+    "fun_facts": [
+      "Pasta with tomato sauce is actually one of the lighter international options at 140 cal/100g.",
+      "White sauce pasta can be 60% more calories than red sauce — cream is the culprit."
+    ],
+    "common_mistakes": [
+      "Red vs white sauce is a 200+ calorie difference per plate. Always check which sauce."
+    ],
+    "visual_references": [
+      "1 plate red sauce pasta = ~350 cal; white sauce = ~560 cal"
+    ]
+  },
+  {
+    "canonical_name": "french_fries",
+    "display_name": "French Fries",
+    "aliases": [
+      "fries",
+      "finger chips"
+    ],
+    "category": "international",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 312,
+    "protein_per_100g": 3.4,
+    "carbs_per_100g": 41.0,
+    "fat_per_100g": 15.0,
+    "portions": {
+      "small serving (~75g)": {
+        "grams": 75,
+        "calories": 234
+      },
+      "medium serving (~117g)": {
+        "grams": 117,
+        "calories": 365
+      },
+      "large serving (~150g)": {
+        "grams": 150,
+        "calories": 468
+      }
+    },
+    "preparations": {
+      "standard fried": {
+        "multiplier": 1.0,
+        "note": "Deep fried potato strips"
+      },
+      "peri peri / masala": {
+        "multiplier": 1.05,
+        "note": "Seasoning adds minimal"
+      },
+      "loaded with cheese": {
+        "multiplier": 1.3,
+        "note": "Cheese sauce adds 100+ cal"
+      }
+    },
+    "fun_facts": [
+      "French fries at 312 cal/100g are more calorie-dense than samosas (308 cal/100g).",
+      "A large fries serving is 468 calories — more than a full plate of dal chawal."
+    ],
+    "common_mistakes": [
+      "Fries are treated as a side dish but a large serving has more calories than many full meals."
+    ],
+    "visual_references": [
+      "Medium fries = ~365 cal — basically a meal's worth"
+    ]
+  },
+  {
+    "canonical_name": "dhokla",
+    "display_name": "Dhokla",
+    "aliases": [
+      "khaman",
+      "besan dhokla"
+    ],
+    "category": "snack",
+    "region": [
+      "gujarat",
+      "maharashtra"
+    ],
+    "base_calories_per_100g": 145,
+    "protein_per_100g": 4.5,
+    "carbs_per_100g": 23.0,
+    "fat_per_100g": 3.0,
+    "portions": {
+      "2 pieces (~60g)": {
+        "grams": 60,
+        "calories": 87
+      },
+      "4 pieces (~120g)": {
+        "grams": 120,
+        "calories": 174
+      },
+      "1 plate (~150g)": {
+        "grams": 150,
+        "calories": 218
+      }
+    },
+    "preparations": {
+      "steamed": {
+        "multiplier": 1.0,
+        "note": "Steamed besan batter with tempering"
+      },
+      "fried khaman": {
+        "multiplier": 1.4,
+        "note": "Some versions are pan-fried"
+      }
+    },
+    "fun_facts": [
+      "Dhokla is one of the healthiest Indian snacks at 145 cal/100g — steaming keeps fat minimal.",
+      "4 pieces of dhokla have fewer calories than 1 samosa."
+    ],
+    "common_mistakes": [
+      "Dhokla is genuinely light. The issue is the sugar in some Gujarati versions and the oil tempering on top."
+    ],
+    "visual_references": [
+      "4 pieces = ~174 cal — one of the lightest snack options"
+    ]
+  },
+  {
+    "canonical_name": "thepla",
+    "display_name": "Thepla (Methi)",
+    "aliases": [
+      "methi thepla",
+      "gujarati thepla"
+    ],
+    "category": "breakfast",
+    "region": [
+      "gujarat"
+    ],
+    "base_calories_per_100g": 300,
+    "protein_per_100g": 7.5,
+    "carbs_per_100g": 40.0,
+    "fat_per_100g": 12.0,
+    "portions": {
+      "1 thepla (~40g)": {
+        "grams": 40,
+        "calories": 120
+      },
+      "2 theplas (~80g)": {
+        "grams": 80,
+        "calories": 240
+      },
+      "3 theplas (~120g)": {
+        "grams": 120,
+        "calories": 360
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Whole wheat + methi leaves + oil"
+      },
+      "travel thepla (more oil)": {
+        "multiplier": 1.15,
+        "note": "Extra oil for preservation"
+      }
+    },
+    "fun_facts": [
+      "Thepla is basically a flavored paratha — similar calorie profile but with added fenugreek nutrition.",
+      "3 theplas with pickle is a common travel meal at 360+ calories."
+    ],
+    "common_mistakes": [
+      "They are thin so people eat 3-4. At 120 cal each, that is 360-480 cal from bread alone."
+    ],
+    "visual_references": [
+      "1 thepla = ~120 cal — similar to 1 roti with ghee"
+    ]
+  },
+  {
+    "canonical_name": "murukku",
+    "display_name": "Murukku / Chakli",
+    "aliases": [
+      "chakli",
+      "chakri"
+    ],
+    "category": "snack",
+    "region": [
+      "tamil_nadu",
+      "karnataka",
+      "maharashtra",
+      "all_india"
+    ],
+    "base_calories_per_100g": 470,
+    "protein_per_100g": 9.0,
+    "carbs_per_100g": 57.0,
+    "fat_per_100g": 25.0,
+    "portions": {
+      "2-3 pieces (~30g)": {
+        "grams": 30,
+        "calories": 141
+      },
+      "5-6 pieces (~60g)": {
+        "grams": 60,
+        "calories": 282
+      },
+      "1 small bowl (~80g)": {
+        "grams": 80,
+        "calories": 376
+      }
+    },
+    "preparations": {
+      "standard deep fried": {
+        "multiplier": 1.0,
+        "note": "Rice flour + urad dal, deep fried"
+      },
+      "baked version": {
+        "multiplier": 0.75,
+        "note": "Significantly less oil"
+      }
+    },
+    "fun_facts": [
+      "Murukku at 470 cal/100g is the most calorie-dense snack in our entire database.",
+      "A small bowl of murukku has more calories than a plate of biryani."
+    ],
+    "common_mistakes": [
+      "They are crunchy and addictive. A handful (60g) is 282 calories without even realizing."
+    ],
+    "visual_references": [
+      "Small bowl of murukku = ~376 cal — extremely calorie dense"
+    ]
+  },
+  {
+    "canonical_name": "cold_coffee",
+    "display_name": "Cold Coffee (with Ice Cream)",
+    "aliases": [
+      "iced coffee",
+      "cold coffee shake"
+    ],
+    "category": "beverage",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 110,
+    "protein_per_100g": 2.0,
+    "carbs_per_100g": 14.0,
+    "fat_per_100g": 4.5,
+    "portions": {
+      "1 regular glass (~250ml)": {
+        "grams": 250,
+        "calories": 275
+      },
+      "1 large glass (~350ml)": {
+        "grams": 350,
+        "calories": 385
+      }
+    },
+    "preparations": {
+      "with ice cream": {
+        "multiplier": 1.0,
+        "note": "Coffee + milk + sugar + ice cream"
+      },
+      "without ice cream": {
+        "multiplier": 0.6,
+        "note": "Much lighter without ice cream"
+      },
+      "with whipped cream": {
+        "multiplier": 1.2,
+        "note": "Cream topping adds 50+ cal"
+      }
+    },
+    "fun_facts": [
+      "A large cold coffee with ice cream (385 cal) has more calories than a plate of chole chawal.",
+      "Without ice cream, cold coffee drops to about 165 cal per glass — a 60% reduction."
+    ],
+    "common_mistakes": [
+      "It is a beverage so people do not count it. But a glass of cold coffee can be 275-385 calories."
+    ],
+    "visual_references": [
+      "1 glass with ice cream = ~275 cal — a liquid meal"
+    ]
+  },
+  {
+    "canonical_name": "mango_lassi",
+    "display_name": "Mango Lassi",
+    "aliases": [
+      "aam lassi"
+    ],
+    "category": "beverage",
+    "region": [
+      "north_india",
+      "all_india"
+    ],
+    "base_calories_per_100g": 75,
+    "protein_per_100g": 2.5,
+    "carbs_per_100g": 10.0,
+    "fat_per_100g": 2.5,
+    "portions": {
+      "1 glass (~250ml)": {
+        "grams": 250,
+        "calories": 188
+      },
+      "1 tall glass (~400ml)": {
+        "grams": 400,
+        "calories": 300
+      }
+    },
+    "preparations": {
+      "standard": {
+        "multiplier": 1.0,
+        "note": "Yogurt + mango pulp + sugar"
+      },
+      "with cream": {
+        "multiplier": 1.3,
+        "note": "Cream makes it richer"
+      }
+    },
+    "fun_facts": [
+      "Mango lassi has double the calories of regular sweet lassi because of the mango pulp sugar.",
+      "A tall glass of mango lassi (300 cal) consumed alongside a meal can add 25% to your total intake."
+    ],
+    "common_mistakes": [
+      "Lassi feels like a drink but at 188-300 cal per glass, it is really a dessert."
+    ],
+    "visual_references": [
+      "1 glass mango lassi = ~188 cal — treat it as food, not just a drink"
+    ]
+  },
+  {
+    "canonical_name": "nimbu_pani",
+    "display_name": "Nimbu Pani / Lemonade",
+    "aliases": [
+      "lemonade",
+      "shikanji",
+      "lime water"
+    ],
+    "category": "beverage",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 30,
+    "protein_per_100g": 0.1,
+    "carbs_per_100g": 7.0,
+    "fat_per_100g": 0.0,
+    "portions": {
+      "1 glass (~250ml)": {
+        "grams": 250,
+        "calories": 75
+      },
+      "1 glass (no sugar)": {
+        "grams": 250,
+        "calories": 10
+      }
+    },
+    "preparations": {
+      "with sugar": {
+        "multiplier": 1.0,
+        "note": "Lime + water + sugar + salt"
+      },
+      "with honey": {
+        "multiplier": 1.1,
+        "note": "Honey adds slightly more cal than sugar"
+      },
+      "no sugar / salt only": {
+        "multiplier": 0.1,
+        "note": "Essentially zero calories"
+      }
+    },
+    "fun_facts": [
+      "Nimbu pani without sugar is basically zero calories — all the calories come from sugar.",
+      "Switching from a sweet lassi to nimbu pani saves 100+ calories per glass."
+    ],
+    "common_mistakes": [
+      "Without sugar it is 10 cal. With sugar it is 75 cal. Same drink, very different numbers."
+    ],
+    "visual_references": [
+      "1 glass with sugar = ~75 cal; without sugar = ~10 cal"
+    ]
+  },
+  {
+    "canonical_name": "oats",
+    "display_name": "Oats (Cooked with Water)",
+    "aliases": [
+      "oatmeal",
+      "porridge"
+    ],
+    "category": "breakfast",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 68,
+    "protein_per_100g": 2.4,
+    "carbs_per_100g": 12.0,
+    "fat_per_100g": 1.4,
+    "portions": {
+      "1 bowl (~250g cooked)": {
+        "grams": 250,
+        "calories": 170
+      },
+      "1 small bowl (~150g)": {
+        "grams": 150,
+        "calories": 102
+      }
+    },
+    "preparations": {
+      "with water": {
+        "multiplier": 1.0,
+        "note": "Plain oats cooked in water"
+      },
+      "with milk": {
+        "protein_multiplier": 2.0,
+        "carbs_multiplier": 1.5,
+        "fat_multiplier": 2.0,
+        "note": "Milk adds protein, carbs, and fat"
+      },
+      "with honey + banana": {
+        "multiplier": 2.2,
+        "note": "Toppings add significant calories"
+      }
+    },
+    "fun_facts": [
+      "Plain oats in water is just 68 cal/100g — one of the lowest calorie breakfast bases.",
+      "But oats with milk, honey, banana, and nuts can easily become 400+ calories."
+    ],
+    "common_mistakes": [
+      "Oats are healthy but not automatically low-calorie. A loaded oats bowl can match a paratha breakfast."
+    ],
+    "visual_references": [
+      "1 bowl plain oats (water) = ~170 cal; with milk + toppings = ~350+ cal"
+    ]
+  },
+  {
+    "canonical_name": "grilled_chicken_breast",
+    "display_name": "Grilled Chicken Breast",
+    "aliases": [
+      "chicken breast",
+      "plain chicken"
+    ],
+    "category": "protein",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 165,
+    "protein_per_100g": 31.0,
+    "carbs_per_100g": 0.0,
+    "fat_per_100g": 3.6,
+    "portions": {
+      "1 breast (~150g)": {
+        "grams": 150,
+        "calories": 248
+      },
+      "100g": {
+        "grams": 100,
+        "calories": 165
+      }
+    },
+    "preparations": {
+      "grilled / baked": {
+        "multiplier": 1.0,
+        "note": "No added oil"
+      },
+      "pan fried with oil": {
+        "multiplier": 1.3,
+        "note": "Oil adds ~30% more calories"
+      },
+      "with skin": {
+        "multiplier": 1.4,
+        "note": "Skin adds significant fat"
+      }
+    },
+    "fun_facts": [
+      "Chicken breast has the best protein-to-calorie ratio of any food: 31g protein in just 165 calories.",
+      "100g of chicken breast gives you as much protein as 5 boiled eggs at fewer calories."
+    ],
+    "common_mistakes": [
+      "Grilled vs fried chicken breast: 165 cal vs 215 cal per 100g. The cooking method adds 30%."
+    ],
+    "visual_references": [
+      "1 chicken breast = ~248 cal with 46g protein — the gold standard for protein"
+    ]
+  },
+  {
+    "canonical_name": "moong_sprouts",
+    "display_name": "Moong Sprouts (Steamed)",
+    "aliases": [
+      "sprouts",
+      "sprouted moong",
+      "ankurit moong"
+    ],
+    "category": "protein",
+    "region": [
+      "all_india"
+    ],
+    "base_calories_per_100g": 50,
+    "protein_per_100g": 3.0,
+    "carbs_per_100g": 6.0,
+    "fat_per_100g": 0.3,
+    "portions": {
+      "1 katori (~100g)": {
+        "grams": 100,
+        "calories": 50
+      },
+      "1 bowl (~200g)": {
+        "grams": 200,
+        "calories": 100
+      }
+    },
+    "preparations": {
+      "steamed / boiled": {
+        "multiplier": 1.0,
+        "note": "Plain steamed sprouts"
+      },
+      "sprout chaat (with oil + spices)": {
+        "multiplier": 1.8,
+        "note": "Oil and chutneys add significantly"
+      },
+      "sprout salad": {
+        "multiplier": 1.3,
+        "note": "Lemon, onion, minimal oil"
+      }
+    },
+    "fun_facts": [
+      "Moong sprouts at 50 cal/100g are one of the most nutrient-dense low-calorie foods available.",
+      "A full bowl of steamed sprouts (100 cal) has fewer calories than a single samosa."
+    ],
+    "common_mistakes": [
+      "Steamed sprouts are 50 cal. Sprout chaat with oil can be 90 cal for the same amount. Preparation matters."
+    ],
+    "visual_references": [
+      "1 bowl steamed sprouts = ~100 cal — excellent volume food"
+    ]
+  },
+  {
+    "canonical_name": "paneer_bhurji",
+    "display_name": "Paneer Bhurji",
+    "aliases": [
+      "scrambled paneer"
+    ],
+    "category": "protein",
+    "region": [
+      "north_india",
+      "all_india"
+    ],
+    "base_calories_per_100g": 260,
+    "protein_per_100g": 18.0,
+    "carbs_per_100g": 3.5,
+    "fat_per_100g": 19.0,
+    "portions": {
+      "1 katori (~120g)": {
+        "grams": 120,
+        "calories": 312
+      },
+      "1 plate with roti": {
+        "grams": 120,
+        "calories": 312
+      }
+    },
+    "preparations": {
+      "standard (with oil)": {
+        "multiplier": 1.0,
+        "note": "Crumbled paneer with onion-tomato"
+      },
+      "with butter": {
+        "multiplier": 1.15,
+        "note": "Butter adds 50+ cal per serving"
+      },
+      "dry (less oil)": {
+        "multiplier": 0.85,
+        "note": "Minimal oil version"
+      }
+    },
+    "fun_facts": [
+      "Paneer bhurji has 18g protein per 100g — the best vegetarian protein option after paneer tikka.",
+      "Paneer bhurji vs egg bhurji: paneer has 70% more calories for similar protein. Eggs win on efficiency."
+    ],
+    "common_mistakes": [
+      "It is high protein but also high fat. Paneer is 260 cal/100g vs chicken breast at 165 cal/100g."
+    ],
+    "visual_references": [
+      "1 katori paneer bhurji = ~312 cal with 22g protein"
+    ]
+  },
+  {
+    "canonical_name": "brown_rice",
+    "display_name": "Brown Rice (Cooked)",
+    "aliases": [
+      "whole grain rice"
+    ],
+    "category": "staple",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 112,
+    "protein_per_100g": 2.3,
+    "carbs_per_100g": 24.0,
+    "fat_per_100g": 0.8,
+    "portions": {
+      "1 katori (~100g)": {
+        "grams": 100,
+        "calories": 112
+      },
+      "1 plate (~200g)": {
+        "grams": 200,
+        "calories": 224
+      }
+    },
+    "preparations": {
+      "plain steamed": {
+        "multiplier": 1.0,
+        "note": "Steamed brown rice"
+      },
+      "with ghee": {
+        "multiplier": 1.2,
+        "note": "Ghee adds 40-50 cal per tsp"
+      }
+    },
+    "fun_facts": [
+      "Brown rice has only 14% fewer calories than white rice — the difference is smaller than most people think.",
+      "The real benefit of brown rice is fiber (3x more than white), not calorie reduction."
+    ],
+    "common_mistakes": [
+      "Switching from white to brown rice saves only 18 cal per 100g. It is not a magic weight loss food."
+    ],
+    "visual_references": [
+      "1 plate brown rice = ~224 cal vs white rice ~260 cal — modest difference"
+    ]
+  },
+  {
+    "canonical_name": "sandwich",
+    "display_name": "Sandwich (Veg/Chicken)",
+    "aliases": [
+      "bread sandwich",
+      "grilled sandwich",
+      "club sandwich"
+    ],
+    "category": "international",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 215,
+    "protein_per_100g": 8.0,
+    "carbs_per_100g": 24.0,
+    "fat_per_100g": 8.0,
+    "portions": {
+      "1 regular sandwich (~150g)": {
+        "grams": 150,
+        "calories": 323
+      },
+      "1 grilled sandwich (~170g)": {
+        "grams": 170,
+        "calories": 390
+      }
+    },
+    "preparations": {
+      "plain bread": {
+        "multiplier": 1.0,
+        "note": "Bread + filling + spread"
+      },
+      "grilled with butter": {
+        "multiplier": 1.2,
+        "note": "Butter for grilling adds fat"
+      },
+      "club/triple decker": {
+        "multiplier": 1.5,
+        "note": "Extra bread + filling layers"
+      }
+    },
+    "fun_facts": [
+      "A grilled cheese sandwich can be 390 cal — similar to a plate of rajma chawal.",
+      "The bread contributes about 40% of a sandwich's calories. Open-face saves 80-100 cal."
+    ],
+    "common_mistakes": [
+      "Grilling adds butter. A grilled sandwich is 20% more calories than a regular one."
+    ],
+    "visual_references": [
+      "1 regular sandwich = ~323 cal; grilled = ~390 cal"
+    ]
+  },
+  {
+    "canonical_name": "fried_chicken",
+    "display_name": "Fried Chicken (Battered)",
+    "aliases": [
+      "KFC style",
+      "crispy chicken",
+      "chicken fry"
+    ],
+    "category": "protein",
+    "region": [
+      "all_india",
+      "international"
+    ],
+    "base_calories_per_100g": 250,
+    "protein_per_100g": 20.0,
+    "carbs_per_100g": 12.0,
+    "fat_per_100g": 14.0,
+    "portions": {
+      "1 piece (~80g)": {
+        "grams": 80,
+        "calories": 200
+      },
+      "2 pieces (~160g)": {
+        "grams": 160,
+        "calories": 400
+      },
+      "3 pieces (~240g)": {
+        "grams": 240,
+        "calories": 600
+      }
+    },
+    "preparations": {
+      "battered and fried": {
+        "multiplier": 1.0,
+        "note": "Standard KFC-style"
+      },
+      "strips/tenders": {
+        "multiplier": 1.1,
+        "note": "More surface area = more batter"
+      }
+    },
+    "fun_facts": [
+      "Fried chicken is 250 cal/100g vs grilled chicken breast at 165 cal/100g — batter adds 50% more calories.",
+      "3 pieces of fried chicken (600 cal) equals a full biryani plate."
+    ],
+    "common_mistakes": [
+      "The batter and frying turn lean chicken into a calorie-dense food. The chicken inside is fine — it is the coating."
+    ],
+    "visual_references": [
+      "1 piece fried chicken = ~200 cal; tandoori leg piece = ~180 cal for more protein"
+    ]
+  },
+  {
+    "canonical_name": "dal_vada",
+    "display_name": "Dal Vada",
+    "aliases": [
+      "masala vada",
+      "parippu vada",
+      "chana dal vada"
+    ],
+    "category": "snack",
+    "region": [
+      "south_india",
+      "all_india"
+    ],
+    "base_calories_per_100g": 210,
+    "protein_per_100g": 8.0,
+    "carbs_per_100g": 20.0,
+    "fat_per_100g": 10.0,
+    "portions": {
+      "1 piece (~40g)": {
+        "grams": 40,
+        "calories": 84
+      },
+      "3 pieces (~120g)": {
+        "grams": 120,
+        "calories": 252
+      },
+      "5 pieces (~200g)": {
+        "grams": 200,
+        "calories": 420
+      }
+    },
+    "preparations": {
+      "deep fried": {
+        "multiplier": 1.0,
+        "note": "Ground dal + spices, deep fried"
+      },
+      "shallow fried": {
+        "multiplier": 0.8,
+        "note": "Less oil absorption"
+      }
+    },
+    "fun_facts": [
+      "Dal vada has better protein than most snacks because the base is lentils, not potatoes.",
+      "3 dal vadas (252 cal) have about the same calories as 1 samosa — but with double the protein."
+    ],
+    "common_mistakes": [
+      "They are small so you eat many. 5 pieces is 420 calories."
+    ],
+    "visual_references": [
+      "1 dal vada = ~84 cal with 3g protein — better than most fried snacks"
+    ]
   }
 ]

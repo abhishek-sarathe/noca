@@ -178,6 +178,7 @@ class ChallengeGraphState(TypedDict):
     user_id: str
     skill_profile: SkillProfile | None
     num_questions: int
+    challenge_type: str  # specific type or empty for mix
     quiz_questions: list[QuizQuestion]
     error: str
 
@@ -188,6 +189,7 @@ async def generate_quiz_node(state: ChallengeGraphState) -> dict:
         questions = await generate_quiz(
             skill_profile=state.get("skill_profile"),
             num_questions=state.get("num_questions", 5),
+            challenge_type=state.get("challenge_type", ""),
         )
         return {"quiz_questions": questions}
     except Exception as e:
@@ -244,12 +246,14 @@ async def run_challenge_pipeline(
     user_id: str = "anonymous",
     skill_profile: SkillProfile | None = None,
     num_questions: int = 5,
+    challenge_type: str | None = None,
 ) -> dict:
     """Run the challenge/quiz pipeline."""
     initial_state = {
         "user_id": user_id,
         "skill_profile": skill_profile,
         "num_questions": num_questions,
+        "challenge_type": challenge_type or "",
         "quiz_questions": [],
         "error": "",
     }

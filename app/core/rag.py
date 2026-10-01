@@ -93,12 +93,20 @@ def build_documents_from_food(food: dict) -> list[dict]:
         },
     })
 
-    # Doc 3: Preparation variations (for cooking method queries)
+    # Doc 3: Preparation variations
     preps_text = f"Preparation styles for {display}: "
     for prep_name, prep_data in food.get("preparations", {}).items():
-        multiplier = prep_data["multiplier"]
-        note = prep_data["note"]
-        preps_text += f"{prep_name} (calorie multiplier: {multiplier}x — {note}). "
+        note = prep_data.get("note", "")
+        if "protein_multiplier" in prep_data:
+            p_m = prep_data["protein_multiplier"]
+            c_m = prep_data["carbs_multiplier"]
+            f_m = prep_data["fat_multiplier"]
+            preps_text += (
+                f"{prep_name} (protein x{p_m}, carbs x{c_m}, fat x{f_m} — {note}). "
+            )
+        else:
+            multiplier = prep_data.get("multiplier", 1.0)
+            preps_text += f"{prep_name} (calorie multiplier: {multiplier}x — {note}). "
     documents.append({
         "id": f"{name}_preparations",
         "text": preps_text,
